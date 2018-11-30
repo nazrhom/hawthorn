@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Analyze JavaScript require/import dependencies trees",
   "main": "lib/index.js",
+  "bin": {
+    "hawthorn": "lib/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:jviottti/hawthorn.git"
