@@ -24,37 +24,29 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-const path = require('path')
-const esprima = require('esprima')
-const esprimaWalk = require('esprima-walk')
+const tap = require('tap')
+const ast = require('../../lib/ast')
 
-exports.getDependencies = (filePath, string) => {
-  const dependencies = []
+tap.test('should parse a CommonJS file', (test) => {
+  const text = `
+    const fs = require('fs');
+    const utils = require('./utils');
 
-  esprimaWalk(esprima.parse(string), (node) => {
-    if (node.type === 'CallExpression' &&
-        node.callee.type === 'Identifier' &&
-        node.callee.name === 'require' &&
-        node.arguments.length > 0) {
-      const argument = node.arguments[0]
+    utils.foo(fs);
+  `
 
-      if (argument.type !== 'Literal') {
-        return
-      }
+  const result = ast.getDependencies('foo/bar.js', text)
 
-      if (argument.value.startsWith('.')) {
-        dependencies.push({
-          type: 'local',
-          path: path.join(path.dirname(filePath), argument.value)
-        })
-      } else {
-        dependencies.push({
-          type: 'module',
-          path: argument.value
-        })
-      }
+  test.same(result, [
+    {
+      type: 'module',
+      path: 'fs'
+    },
+    {
+      type: 'local',
+      path: 'foo/utils'
     }
-  })
+  ])
 
-  return dependencies
-}
+  test.end()
+})
