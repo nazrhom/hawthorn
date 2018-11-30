@@ -33,6 +33,243 @@
           "realpath": "node_modules/glob/glob.js"
         }
       ]
+    },
+    "node_modules/glob/glob.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "fs.realpath",
+          "realpath": "node_modules/fs.realpath/index.js"
+        },
+        {
+          "type": "module",
+          "path": "minimatch",
+          "realpath": "node_modules/minimatch/minimatch.js"
+        },
+        {
+          "type": "module",
+          "path": "inherits",
+          "realpath": "node_modules/inherits/inherits.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "module",
+          "path": "path-is-absolute",
+          "realpath": "node_modules/path-is-absolute/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/sync.js",
+          "realpath": "node_modules/glob/sync.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/common.js",
+          "realpath": "node_modules/glob/common.js"
+        },
+        {
+          "type": "module",
+          "path": "inflight",
+          "realpath": "node_modules/inflight/inflight.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "once",
+          "realpath": "node_modules/once/once.js"
+        },
+        {
+          "type": "internal",
+          "path": "events",
+          "realpath": "events"
+        }
+      ]
+    },
+    "node_modules/fs.realpath/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/fs.realpath/old.js",
+          "realpath": "node_modules/fs.realpath/old.js"
+        }
+      ]
+    },
+    "node_modules/fs.realpath/old.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    },
+    "node_modules/minimatch/minimatch.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "brace-expansion",
+          "realpath": "node_modules/brace-expansion/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        }
+      ]
+    },
+    "node_modules/brace-expansion/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "concat-map",
+          "realpath": "node_modules/concat-map/index.js"
+        },
+        {
+          "type": "module",
+          "path": "balanced-match",
+          "realpath": "node_modules/balanced-match/index.js"
+        }
+      ]
+    },
+    "node_modules/concat-map/index.js": {
+      "dependencies": []
+    },
+    "node_modules/balanced-match/index.js": {
+      "dependencies": []
+    },
+    "node_modules/inherits/inherits.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ]
+    },
+    "node_modules/path-is-absolute/index.js": {
+      "dependencies": []
+    },
+    "node_modules/glob/sync.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "fs.realpath",
+          "realpath": "node_modules/fs.realpath/index.js"
+        },
+        {
+          "type": "module",
+          "path": "minimatch",
+          "realpath": "node_modules/minimatch/minimatch.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "module",
+          "path": "path-is-absolute",
+          "realpath": "node_modules/path-is-absolute/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/common.js",
+          "realpath": "node_modules/glob/common.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/glob.js",
+          "realpath": "node_modules/glob/glob.js"
+        }
+      ]
+    },
+    "node_modules/glob/common.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "minimatch",
+          "realpath": "node_modules/minimatch/minimatch.js"
+        },
+        {
+          "type": "module",
+          "path": "path-is-absolute",
+          "realpath": "node_modules/path-is-absolute/index.js"
+        }
+      ]
+    },
+    "node_modules/inflight/inflight.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "wrappy",
+          "realpath": "node_modules/wrappy/wrappy.js"
+        },
+        {
+          "type": "module",
+          "path": "once",
+          "realpath": "node_modules/once/once.js"
+        }
+      ]
+    },
+    "node_modules/wrappy/wrappy.js": {
+      "dependencies": []
+    },
+    "node_modules/once/once.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "wrappy",
+          "realpath": "node_modules/wrappy/wrappy.js"
+        }
+      ]
     }
   }
 }

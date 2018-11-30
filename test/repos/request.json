@@ -1,189 +1,6 @@
 {
   "paths": [ "*.js" ],
   "files": {
-    "lib/auth.js": {
-      "dependencies": [
-        {
-          "type": "module",
-          "path": "caseless",
-          "realpath": "node_modules/caseless/index.js"
-        },
-        {
-          "type": "module",
-          "path": "uuid/v4",
-          "realpath": "node_modules/uuid/v4.js"
-        },
-        {
-          "type": "local",
-          "path": "lib/helpers",
-          "realpath": "lib/helpers.js"
-        }
-      ]
-    },
-    "lib/cookies.js": {
-      "dependencies": [
-        {
-          "type": "module",
-          "path": "tough-cookie",
-          "realpath": "node_modules/tough-cookie/lib/cookie.js"
-        }
-      ]
-    },
-    "lib/getProxyFromURI.js": {
-      "dependencies": []
-    },
-    "lib/har.js": {
-      "dependencies": [
-        {
-          "type": "internal",
-          "path": "fs",
-          "realpath": "fs"
-        },
-        {
-          "type": "internal",
-          "path": "querystring",
-          "realpath": "querystring"
-        },
-        {
-          "type": "module",
-          "path": "har-validator",
-          "realpath": "node_modules/har-validator/lib/promise.js"
-        },
-        {
-          "type": "module",
-          "path": "extend",
-          "realpath": "node_modules/extend/index.js"
-        }
-      ]
-    },
-    "lib/hawk.js": {
-      "dependencies": [
-        {
-          "type": "internal",
-          "path": "crypto",
-          "realpath": "crypto"
-        }
-      ]
-    },
-    "lib/helpers.js": {
-      "dependencies": [
-        {
-          "type": "module",
-          "path": "json-stringify-safe",
-          "realpath": "node_modules/json-stringify-safe/stringify.js"
-        },
-        {
-          "type": "internal",
-          "path": "crypto",
-          "realpath": "crypto"
-        },
-        {
-          "type": "module",
-          "path": "safe-buffer",
-          "realpath": "node_modules/safe-buffer/index.js"
-        }
-      ]
-    },
-    "lib/multipart.js": {
-      "dependencies": [
-        {
-          "type": "module",
-          "path": "uuid/v4",
-          "realpath": "node_modules/uuid/v4.js"
-        },
-        {
-          "type": "module",
-          "path": "combined-stream",
-          "realpath": "node_modules/combined-stream/lib/combined_stream.js"
-        },
-        {
-          "type": "module",
-          "path": "isstream",
-          "realpath": "node_modules/isstream/isstream.js"
-        },
-        {
-          "type": "module",
-          "path": "safe-buffer",
-          "realpath": "node_modules/safe-buffer/index.js"
-        }
-      ]
-    },
-    "lib/oauth.js": {
-      "dependencies": [
-        {
-          "type": "internal",
-          "path": "url",
-          "realpath": "url"
-        },
-        {
-          "type": "module",
-          "path": "qs",
-          "realpath": "node_modules/qs/lib/index.js"
-        },
-        {
-          "type": "module",
-          "path": "caseless",
-          "realpath": "node_modules/caseless/index.js"
-        },
-        {
-          "type": "module",
-          "path": "uuid/v4",
-          "realpath": "node_modules/uuid/v4.js"
-        },
-        {
-          "type": "module",
-          "path": "oauth-sign",
-          "realpath": "node_modules/oauth-sign/index.js"
-        },
-        {
-          "type": "internal",
-          "path": "crypto",
-          "realpath": "crypto"
-        },
-        {
-          "type": "module",
-          "path": "safe-buffer",
-          "realpath": "node_modules/safe-buffer/index.js"
-        }
-      ]
-    },
-    "lib/querystring.js": {
-      "dependencies": [
-        {
-          "type": "module",
-          "path": "qs",
-          "realpath": "node_modules/qs/lib/index.js"
-        },
-        {
-          "type": "internal",
-          "path": "querystring",
-          "realpath": "querystring"
-        }
-      ]
-    },
-    "lib/redirect.js": {
-      "dependencies": [
-        {
-          "type": "internal",
-          "path": "url",
-          "realpath": "url"
-        }
-      ]
-    },
-    "lib/tunnel.js": {
-      "dependencies": [
-        {
-          "type": "internal",
-          "path": "url",
-          "realpath": "url"
-        },
-        {
-          "type": "module",
-          "path": "tunnel-agent",
-          "realpath": "node_modules/tunnel-agent/index.js"
-        }
-      ]
-    },
     "index.js": {
       "dependencies": [
         {
@@ -205,6 +22,174 @@
           "type": "local",
           "path": "request",
           "realpath": "request.js"
+        }
+      ]
+    },
+    "node_modules/extend/index.js": {
+      "dependencies": []
+    },
+    "lib/cookies.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "tough-cookie",
+          "realpath": "node_modules/tough-cookie/lib/cookie.js"
+        }
+      ]
+    },
+    "node_modules/tough-cookie/lib/cookie.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "net",
+          "realpath": "net"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/pubsuffix-psl",
+          "realpath": "node_modules/tough-cookie/lib/pubsuffix-psl.js"
+        },
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/store",
+          "realpath": "node_modules/tough-cookie/lib/store.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/memstore",
+          "realpath": "node_modules/tough-cookie/lib/memstore.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/pathMatch",
+          "realpath": "node_modules/tough-cookie/lib/pathMatch.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/package.json",
+          "realpath": "node_modules/tough-cookie/package.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/permuteDomain",
+          "realpath": "node_modules/tough-cookie/lib/permuteDomain.js"
+        },
+        {
+          "type": "module",
+          "path": "punycode",
+          "realpath": "node_modules/punycode/punycode.js"
+        }
+      ]
+    },
+    "node_modules/tough-cookie/lib/pubsuffix-psl.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "psl",
+          "realpath": "node_modules/psl/index.js"
+        }
+      ]
+    },
+    "node_modules/psl/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "punycode",
+          "realpath": "node_modules/punycode/punycode.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/psl/data/rules.json",
+          "realpath": "node_modules/psl/data/rules.json"
+        }
+      ]
+    },
+    "node_modules/punycode/punycode.js": {
+      "dependencies": []
+    },
+    "node_modules/psl/data/rules.json": {
+      "dependencies": []
+    },
+    "node_modules/tough-cookie/lib/store.js": {
+      "dependencies": []
+    },
+    "node_modules/tough-cookie/lib/memstore.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/store",
+          "realpath": "node_modules/tough-cookie/lib/store.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/permuteDomain",
+          "realpath": "node_modules/tough-cookie/lib/permuteDomain.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/pathMatch",
+          "realpath": "node_modules/tough-cookie/lib/pathMatch.js"
+        }
+      ]
+    },
+    "node_modules/tough-cookie/lib/permuteDomain.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/tough-cookie/lib/pubsuffix-psl",
+          "realpath": "node_modules/tough-cookie/lib/pubsuffix-psl.js"
+        }
+      ]
+    },
+    "node_modules/tough-cookie/lib/pathMatch.js": {
+      "dependencies": []
+    },
+    "node_modules/tough-cookie/package.json": {
+      "dependencies": []
+    },
+    "lib/helpers.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "json-stringify-safe",
+          "realpath": "node_modules/json-stringify-safe/stringify.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    },
+    "node_modules/json-stringify-safe/stringify.js": {
+      "dependencies": []
+    },
+    "node_modules/safe-buffer/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "buffer",
+          "realpath": "buffer"
         }
       ]
     },
@@ -349,6 +334,2843 @@
           "type": "local",
           "path": "lib/tunnel",
           "realpath": "lib/tunnel.js"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    },
+    "node_modules/aws-sign2/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        }
+      ]
+    },
+    "node_modules/aws4/aws4.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "internal",
+          "path": "querystring",
+          "realpath": "querystring"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/aws4/lru",
+          "realpath": "node_modules/aws4/lru.js"
+        }
+      ]
+    },
+    "node_modules/aws4/lru.js": {
+      "dependencies": []
+    },
+    "node_modules/http-signature/lib/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/http-signature/lib/parser",
+          "realpath": "node_modules/http-signature/lib/parser.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/http-signature/lib/signer",
+          "realpath": "node_modules/http-signature/lib/signer.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/http-signature/lib/verify",
+          "realpath": "node_modules/http-signature/lib/verify.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/http-signature/lib/utils",
+          "realpath": "node_modules/http-signature/lib/utils.js"
+        }
+      ]
+    },
+    "node_modules/http-signature/lib/parser.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/http-signature/lib/utils",
+          "realpath": "node_modules/http-signature/lib/utils.js"
+        }
+      ]
+    },
+    "node_modules/assert-plus/assert.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        }
+      ]
+    },
+    "node_modules/http-signature/lib/utils.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "sshpk",
+          "realpath": "node_modules/sshpk/lib/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/fingerprint",
+          "realpath": "node_modules/sshpk/lib/fingerprint.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/certificate",
+          "realpath": "node_modules/sshpk/lib/certificate.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/identity",
+          "realpath": "node_modules/sshpk/lib/identity.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/key.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/fingerprint",
+          "realpath": "node_modules/sshpk/lib/fingerprint.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/auto",
+          "realpath": "node_modules/sshpk/lib/formats/auto.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs1",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs1.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs8",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs8.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/rfc4253",
+          "realpath": "node_modules/sshpk/lib/formats/rfc4253.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/ssh",
+          "realpath": "node_modules/sshpk/lib/formats/ssh.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/ssh-private",
+          "realpath": "node_modules/sshpk/lib/formats/ssh-private.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/dnssec",
+          "realpath": "node_modules/sshpk/lib/formats/dnssec.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/dhe",
+          "realpath": "node_modules/sshpk/lib/dhe.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/ed-compat",
+          "realpath": "node_modules/sshpk/lib/ed-compat.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/algs.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/safer-buffer/safer.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "buffer",
+          "realpath": "buffer"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/fingerprint.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/certificate",
+          "realpath": "node_modules/sshpk/lib/certificate.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/errors.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/certificate.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/fingerprint",
+          "realpath": "node_modules/sshpk/lib/fingerprint.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/identity",
+          "realpath": "node_modules/sshpk/lib/identity.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/openssh-cert",
+          "realpath": "node_modules/sshpk/lib/formats/openssh-cert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/x509",
+          "realpath": "node_modules/sshpk/lib/formats/x509.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/x509-pem",
+          "realpath": "node_modules/sshpk/lib/formats/x509-pem.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/signature.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/ssh-buffer",
+          "realpath": "node_modules/sshpk/lib/ssh-buffer.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/utils.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "module",
+          "path": "ecc-jsbn/lib/ec",
+          "realpath": "node_modules/ecc-jsbn/lib/ec.js"
+        },
+        {
+          "type": "module",
+          "path": "tweetnacl",
+          "realpath": "node_modules/tweetnacl/nacl-fast.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        },
+        {
+          "type": "module",
+          "path": "jsbn",
+          "realpath": "node_modules/jsbn/index.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/private-key.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/fingerprint",
+          "realpath": "node_modules/sshpk/lib/fingerprint.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/dhe",
+          "realpath": "node_modules/sshpk/lib/dhe.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/ed-compat",
+          "realpath": "node_modules/sshpk/lib/ed-compat.js"
+        },
+        {
+          "type": "module",
+          "path": "tweetnacl",
+          "realpath": "node_modules/tweetnacl/nacl-fast.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/auto",
+          "realpath": "node_modules/sshpk/lib/formats/auto.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs1",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs1.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs8",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs8.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/rfc4253",
+          "realpath": "node_modules/sshpk/lib/formats/rfc4253.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/ssh-private",
+          "realpath": "node_modules/sshpk/lib/formats/ssh-private.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/dnssec",
+          "realpath": "node_modules/sshpk/lib/formats/dnssec.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/dhe.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "module",
+          "path": "tweetnacl",
+          "realpath": "node_modules/tweetnacl/nacl-fast.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "module",
+          "path": "ecc-jsbn",
+          "realpath": "node_modules/ecc-jsbn/index.js"
+        },
+        {
+          "type": "module",
+          "path": "ecc-jsbn/lib/ec",
+          "realpath": "node_modules/ecc-jsbn/lib/ec.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        },
+        {
+          "type": "module",
+          "path": "jsbn",
+          "realpath": "node_modules/jsbn/index.js"
+        }
+      ]
+    },
+    "node_modules/tweetnacl/nacl-fast.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        }
+      ]
+    },
+    "node_modules/ecc-jsbn/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ecc-jsbn/lib/sec.js",
+          "realpath": "node_modules/ecc-jsbn/lib/sec.js"
+        },
+        {
+          "type": "module",
+          "path": "jsbn",
+          "realpath": "node_modules/jsbn/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ecc-jsbn/lib/ec.js",
+          "realpath": "node_modules/ecc-jsbn/lib/ec.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/ecc-jsbn/lib/sec.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "jsbn",
+          "realpath": "node_modules/jsbn/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ecc-jsbn/lib/ec.js",
+          "realpath": "node_modules/ecc-jsbn/lib/ec.js"
+        }
+      ]
+    },
+    "node_modules/jsbn/index.js": {
+      "dependencies": []
+    },
+    "node_modules/ecc-jsbn/lib/ec.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "jsbn",
+          "realpath": "node_modules/jsbn/index.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/ed-compat.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "tweetnacl",
+          "realpath": "node_modules/tweetnacl/nacl-fast.js"
+        },
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/auto.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/ssh",
+          "realpath": "node_modules/sshpk/lib/formats/ssh.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/rfc4253",
+          "realpath": "node_modules/sshpk/lib/formats/rfc4253.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/dnssec",
+          "realpath": "node_modules/sshpk/lib/formats/dnssec.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/pem.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs1",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs1.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs8",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs8.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/ssh-private",
+          "realpath": "node_modules/sshpk/lib/formats/ssh-private.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/rfc4253",
+          "realpath": "node_modules/sshpk/lib/formats/rfc4253.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/asn1/lib/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/index",
+          "realpath": "node_modules/asn1/lib/ber/index.js"
+        }
+      ]
+    },
+    "node_modules/asn1/lib/ber/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/errors",
+          "realpath": "node_modules/asn1/lib/ber/errors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/types",
+          "realpath": "node_modules/asn1/lib/ber/types.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/reader",
+          "realpath": "node_modules/asn1/lib/ber/reader.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/writer",
+          "realpath": "node_modules/asn1/lib/ber/writer.js"
+        }
+      ]
+    },
+    "node_modules/asn1/lib/ber/errors.js": {
+      "dependencies": []
+    },
+    "node_modules/asn1/lib/ber/types.js": {
+      "dependencies": []
+    },
+    "node_modules/asn1/lib/ber/reader.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/types",
+          "realpath": "node_modules/asn1/lib/ber/types.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/errors",
+          "realpath": "node_modules/asn1/lib/ber/errors.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/asn1/lib/ber/writer.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/types",
+          "realpath": "node_modules/asn1/lib/ber/types.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asn1/lib/ber/errors",
+          "realpath": "node_modules/asn1/lib/ber/errors.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/pkcs1.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs8",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs8.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/pkcs8.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/ssh-private.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/rfc4253",
+          "realpath": "node_modules/sshpk/lib/formats/rfc4253.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/ssh-buffer",
+          "realpath": "node_modules/sshpk/lib/ssh-buffer.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        },
+        {
+          "type": "module",
+          "path": "bcrypt-pbkdf",
+          "realpath": "node_modules/bcrypt-pbkdf/index.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/rfc4253.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/ssh-buffer",
+          "realpath": "node_modules/sshpk/lib/ssh-buffer.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/ssh-buffer.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/bcrypt-pbkdf/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "tweetnacl",
+          "realpath": "node_modules/tweetnacl/nacl-fast.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/ssh.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/rfc4253",
+          "realpath": "node_modules/sshpk/lib/formats/rfc4253.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/ssh-private",
+          "realpath": "node_modules/sshpk/lib/formats/ssh-private.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/dnssec.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/ssh-buffer",
+          "realpath": "node_modules/sshpk/lib/ssh-buffer.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/dhe",
+          "realpath": "node_modules/sshpk/lib/dhe.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/identity.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/fingerprint",
+          "realpath": "node_modules/sshpk/lib/fingerprint.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/errors",
+          "realpath": "node_modules/sshpk/lib/errors.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/openssh-cert.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/ssh-buffer",
+          "realpath": "node_modules/sshpk/lib/ssh-buffer.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/identity",
+          "realpath": "node_modules/sshpk/lib/identity.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/rfc4253",
+          "realpath": "node_modules/sshpk/lib/formats/rfc4253.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/certificate",
+          "realpath": "node_modules/sshpk/lib/certificate.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/x509.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/identity",
+          "realpath": "node_modules/sshpk/lib/identity.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/certificate",
+          "realpath": "node_modules/sshpk/lib/certificate.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pkcs8",
+          "realpath": "node_modules/sshpk/lib/formats/pkcs8.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/sshpk/lib/formats/x509-pem.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/x509",
+          "realpath": "node_modules/sshpk/lib/formats/x509.js"
+        },
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "module",
+          "path": "asn1",
+          "realpath": "node_modules/asn1/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/algs",
+          "realpath": "node_modules/sshpk/lib/algs.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/utils",
+          "realpath": "node_modules/sshpk/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/key",
+          "realpath": "node_modules/sshpk/lib/key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/private-key",
+          "realpath": "node_modules/sshpk/lib/private-key.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/formats/pem",
+          "realpath": "node_modules/sshpk/lib/formats/pem.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/identity",
+          "realpath": "node_modules/sshpk/lib/identity.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/signature",
+          "realpath": "node_modules/sshpk/lib/signature.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/sshpk/lib/certificate",
+          "realpath": "node_modules/sshpk/lib/certificate.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/http-signature/lib/signer.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "internal",
+          "path": "http",
+          "realpath": "http"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "sshpk",
+          "realpath": "node_modules/sshpk/lib/index.js"
+        },
+        {
+          "type": "module",
+          "path": "jsprim",
+          "realpath": "node_modules/jsprim/lib/jsprim.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/http-signature/lib/utils",
+          "realpath": "node_modules/http-signature/lib/utils.js"
+        }
+      ]
+    },
+    "node_modules/jsprim/lib/jsprim.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "extsprintf",
+          "realpath": "node_modules/extsprintf/lib/extsprintf.js"
+        },
+        {
+          "type": "module",
+          "path": "verror",
+          "realpath": "node_modules/verror/lib/verror.js"
+        },
+        {
+          "type": "module",
+          "path": "json-schema",
+          "realpath": "node_modules/json-schema/lib/validate.js"
+        }
+      ]
+    },
+    "node_modules/extsprintf/lib/extsprintf.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ]
+    },
+    "node_modules/verror/lib/verror.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "extsprintf",
+          "realpath": "node_modules/extsprintf/lib/extsprintf.js"
+        },
+        {
+          "type": "module",
+          "path": "core-util-is",
+          "realpath": "node_modules/core-util-is/lib/util.js"
+        }
+      ]
+    },
+    "node_modules/core-util-is/lib/util.js": {
+      "dependencies": []
+    },
+    "node_modules/json-schema/lib/validate.js": {
+      "dependencies": []
+    },
+    "node_modules/http-signature/lib/verify.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "assert-plus",
+          "realpath": "node_modules/assert-plus/assert.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "module",
+          "path": "sshpk",
+          "realpath": "node_modules/sshpk/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/http-signature/lib/utils",
+          "realpath": "node_modules/http-signature/lib/utils.js"
+        }
+      ]
+    },
+    "node_modules/mime-types/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "mime-db",
+          "realpath": "node_modules/mime-db/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        }
+      ]
+    },
+    "node_modules/mime-db/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/mime-db/db.json",
+          "realpath": "node_modules/mime-db/db.json"
+        }
+      ]
+    },
+    "node_modules/mime-db/db.json": {
+      "dependencies": []
+    },
+    "node_modules/caseless/index.js": {
+      "dependencies": []
+    },
+    "node_modules/forever-agent/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "net",
+          "realpath": "net"
+        },
+        {
+          "type": "internal",
+          "path": "tls",
+          "realpath": "tls"
+        },
+        {
+          "type": "internal",
+          "path": "http",
+          "realpath": "http"
+        },
+        {
+          "type": "internal",
+          "path": "https",
+          "realpath": "https"
+        }
+      ]
+    },
+    "node_modules/form-data/lib/form_data.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "combined-stream",
+          "realpath": "node_modules/combined-stream/lib/combined_stream.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "http",
+          "realpath": "http"
+        },
+        {
+          "type": "internal",
+          "path": "https",
+          "realpath": "https"
+        },
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "mime-types",
+          "realpath": "node_modules/mime-types/index.js"
+        },
+        {
+          "type": "module",
+          "path": "asynckit",
+          "realpath": "node_modules/asynckit/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/form-data/lib/populate.js",
+          "realpath": "node_modules/form-data/lib/populate.js"
+        },
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        }
+      ]
+    },
+    "node_modules/combined-stream/lib/combined_stream.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "delayed-stream",
+          "realpath": "node_modules/delayed-stream/lib/delayed_stream.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/combined-stream/lib/defer.js",
+          "realpath": "node_modules/combined-stream/lib/defer.js"
+        },
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        }
+      ]
+    },
+    "node_modules/delayed-stream/lib/delayed_stream.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        }
+      ]
+    },
+    "node_modules/combined-stream/lib/defer.js": {
+      "dependencies": []
+    },
+    "node_modules/asynckit/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/parallel.js",
+          "realpath": "node_modules/asynckit/parallel.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/serial.js",
+          "realpath": "node_modules/asynckit/serial.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/serialOrdered.js",
+          "realpath": "node_modules/asynckit/serialOrdered.js"
+        }
+      ]
+    },
+    "node_modules/asynckit/parallel.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/iterate.js",
+          "realpath": "node_modules/asynckit/lib/iterate.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/state.js",
+          "realpath": "node_modules/asynckit/lib/state.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/terminator.js",
+          "realpath": "node_modules/asynckit/lib/terminator.js"
+        }
+      ]
+    },
+    "node_modules/asynckit/lib/iterate.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/async.js",
+          "realpath": "node_modules/asynckit/lib/async.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/abort.js",
+          "realpath": "node_modules/asynckit/lib/abort.js"
+        }
+      ]
+    },
+    "node_modules/asynckit/lib/async.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/defer.js",
+          "realpath": "node_modules/asynckit/lib/defer.js"
+        }
+      ]
+    },
+    "node_modules/asynckit/lib/defer.js": {
+      "dependencies": []
+    },
+    "node_modules/asynckit/lib/abort.js": {
+      "dependencies": []
+    },
+    "node_modules/asynckit/lib/state.js": {
+      "dependencies": []
+    },
+    "node_modules/asynckit/lib/terminator.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/abort.js",
+          "realpath": "node_modules/asynckit/lib/abort.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/async.js",
+          "realpath": "node_modules/asynckit/lib/async.js"
+        }
+      ]
+    },
+    "node_modules/asynckit/serial.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/serialOrdered.js",
+          "realpath": "node_modules/asynckit/serialOrdered.js"
+        }
+      ]
+    },
+    "node_modules/asynckit/serialOrdered.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/iterate.js",
+          "realpath": "node_modules/asynckit/lib/iterate.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/state.js",
+          "realpath": "node_modules/asynckit/lib/state.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/asynckit/lib/terminator.js",
+          "realpath": "node_modules/asynckit/lib/terminator.js"
+        }
+      ]
+    },
+    "node_modules/form-data/lib/populate.js": {
+      "dependencies": []
+    },
+    "node_modules/isstream/isstream.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        }
+      ]
+    },
+    "lib/getProxyFromURI.js": {
+      "dependencies": []
+    },
+    "lib/hawk.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        }
+      ]
+    },
+    "node_modules/performance-now/lib/performance-now.js": {
+      "dependencies": []
+    },
+    "node_modules/is-typedarray/index.js": {
+      "dependencies": []
+    },
+    "lib/querystring.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "qs",
+          "realpath": "node_modules/qs/lib/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "querystring",
+          "realpath": "querystring"
+        }
+      ]
+    },
+    "node_modules/qs/lib/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/qs/lib/stringify",
+          "realpath": "node_modules/qs/lib/stringify.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/qs/lib/parse",
+          "realpath": "node_modules/qs/lib/parse.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/qs/lib/formats",
+          "realpath": "node_modules/qs/lib/formats.js"
+        }
+      ]
+    },
+    "node_modules/qs/lib/stringify.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/qs/lib/utils",
+          "realpath": "node_modules/qs/lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/qs/lib/formats",
+          "realpath": "node_modules/qs/lib/formats.js"
+        }
+      ]
+    },
+    "node_modules/qs/lib/utils.js": {
+      "dependencies": []
+    },
+    "node_modules/qs/lib/formats.js": {
+      "dependencies": []
+    },
+    "node_modules/qs/lib/parse.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/qs/lib/utils",
+          "realpath": "node_modules/qs/lib/utils.js"
+        }
+      ]
+    },
+    "lib/har.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "querystring",
+          "realpath": "querystring"
+        },
+        {
+          "type": "module",
+          "path": "har-validator",
+          "realpath": "node_modules/har-validator/lib/promise.js"
+        },
+        {
+          "type": "module",
+          "path": "extend",
+          "realpath": "node_modules/extend/index.js"
+        }
+      ]
+    },
+    "node_modules/har-validator/lib/promise.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "ajv",
+          "realpath": "node_modules/ajv/lib/ajv.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-validator/lib/error",
+          "realpath": "node_modules/har-validator/lib/error.js"
+        },
+        {
+          "type": "module",
+          "path": "har-schema",
+          "realpath": "node_modules/har-schema/lib/index.js"
+        },
+        {
+          "type": "module",
+          "path": "ajv/lib/refs/json-schema-draft-06.json",
+          "realpath": "node_modules/ajv/lib/refs/json-schema-draft-06.json"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/ajv.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile",
+          "realpath": "node_modules/ajv/lib/compile/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/resolve",
+          "realpath": "node_modules/ajv/lib/compile/resolve.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/cache",
+          "realpath": "node_modules/ajv/lib/cache.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/schema_obj",
+          "realpath": "node_modules/ajv/lib/compile/schema_obj.js"
+        },
+        {
+          "type": "module",
+          "path": "fast-json-stable-stringify",
+          "realpath": "node_modules/fast-json-stable-stringify/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/formats",
+          "realpath": "node_modules/ajv/lib/compile/formats.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/rules",
+          "realpath": "node_modules/ajv/lib/compile/rules.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/data",
+          "realpath": "node_modules/ajv/lib/data.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/util",
+          "realpath": "node_modules/ajv/lib/compile/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/async",
+          "realpath": "node_modules/ajv/lib/compile/async.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/keyword",
+          "realpath": "node_modules/ajv/lib/keyword.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/error_classes",
+          "realpath": "node_modules/ajv/lib/compile/error_classes.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/refs/json-schema-draft-07.json",
+          "realpath": "node_modules/ajv/lib/refs/json-schema-draft-07.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/refs/data.json",
+          "realpath": "node_modules/ajv/lib/refs/data.json"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/compile/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/resolve",
+          "realpath": "node_modules/ajv/lib/compile/resolve.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/util",
+          "realpath": "node_modules/ajv/lib/compile/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/error_classes",
+          "realpath": "node_modules/ajv/lib/compile/error_classes.js"
+        },
+        {
+          "type": "module",
+          "path": "fast-json-stable-stringify",
+          "realpath": "node_modules/fast-json-stable-stringify/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/validate",
+          "realpath": "node_modules/ajv/lib/dotjs/validate.js"
+        },
+        {
+          "type": "module",
+          "path": "fast-deep-equal",
+          "realpath": "node_modules/fast-deep-equal/index.js"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/compile/resolve.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "uri-js",
+          "realpath": "node_modules/uri-js/dist/es5/uri.all.js"
+        },
+        {
+          "type": "module",
+          "path": "fast-deep-equal",
+          "realpath": "node_modules/fast-deep-equal/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/util",
+          "realpath": "node_modules/ajv/lib/compile/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/schema_obj",
+          "realpath": "node_modules/ajv/lib/compile/schema_obj.js"
+        },
+        {
+          "type": "module",
+          "path": "json-schema-traverse",
+          "realpath": "node_modules/json-schema-traverse/index.js"
+        }
+      ]
+    },
+    "node_modules/uri-js/dist/es5/uri.all.js": {
+      "dependencies": []
+    },
+    "node_modules/fast-deep-equal/index.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/compile/util.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "fast-deep-equal",
+          "realpath": "node_modules/fast-deep-equal/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/ucs2length",
+          "realpath": "node_modules/ajv/lib/compile/ucs2length.js"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/compile/ucs2length.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/compile/schema_obj.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/util",
+          "realpath": "node_modules/ajv/lib/compile/util.js"
+        }
+      ]
+    },
+    "node_modules/json-schema-traverse/index.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/compile/error_classes.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/resolve",
+          "realpath": "node_modules/ajv/lib/compile/resolve.js"
+        }
+      ]
+    },
+    "node_modules/fast-json-stable-stringify/index.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/validate.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/cache.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/compile/formats.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/util",
+          "realpath": "node_modules/ajv/lib/compile/util.js"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/compile/rules.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs",
+          "realpath": "node_modules/ajv/lib/dotjs/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/util",
+          "realpath": "node_modules/ajv/lib/compile/util.js"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/dotjs/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/ref",
+          "realpath": "node_modules/ajv/lib/dotjs/ref.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/allOf",
+          "realpath": "node_modules/ajv/lib/dotjs/allOf.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/anyOf",
+          "realpath": "node_modules/ajv/lib/dotjs/anyOf.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/comment",
+          "realpath": "node_modules/ajv/lib/dotjs/comment.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/const",
+          "realpath": "node_modules/ajv/lib/dotjs/const.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/contains",
+          "realpath": "node_modules/ajv/lib/dotjs/contains.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/dependencies",
+          "realpath": "node_modules/ajv/lib/dotjs/dependencies.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/enum",
+          "realpath": "node_modules/ajv/lib/dotjs/enum.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/format",
+          "realpath": "node_modules/ajv/lib/dotjs/format.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/if",
+          "realpath": "node_modules/ajv/lib/dotjs/if.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/items",
+          "realpath": "node_modules/ajv/lib/dotjs/items.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/_limit",
+          "realpath": "node_modules/ajv/lib/dotjs/_limit.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/_limitItems",
+          "realpath": "node_modules/ajv/lib/dotjs/_limitItems.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/_limitLength",
+          "realpath": "node_modules/ajv/lib/dotjs/_limitLength.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/_limitProperties",
+          "realpath": "node_modules/ajv/lib/dotjs/_limitProperties.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/multipleOf",
+          "realpath": "node_modules/ajv/lib/dotjs/multipleOf.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/not",
+          "realpath": "node_modules/ajv/lib/dotjs/not.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/oneOf",
+          "realpath": "node_modules/ajv/lib/dotjs/oneOf.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/pattern",
+          "realpath": "node_modules/ajv/lib/dotjs/pattern.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/properties",
+          "realpath": "node_modules/ajv/lib/dotjs/properties.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/propertyNames",
+          "realpath": "node_modules/ajv/lib/dotjs/propertyNames.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/required",
+          "realpath": "node_modules/ajv/lib/dotjs/required.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/uniqueItems",
+          "realpath": "node_modules/ajv/lib/dotjs/uniqueItems.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/validate",
+          "realpath": "node_modules/ajv/lib/dotjs/validate.js"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/dotjs/ref.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/allOf.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/anyOf.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/comment.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/const.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/contains.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/dependencies.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/enum.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/format.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/if.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/items.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/_limit.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/_limitItems.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/_limitLength.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/_limitProperties.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/multipleOf.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/not.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/oneOf.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/pattern.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/properties.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/propertyNames.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/required.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/dotjs/uniqueItems.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/data.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/compile/async.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/compile/error_classes",
+          "realpath": "node_modules/ajv/lib/compile/error_classes.js"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/keyword.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/ajv/lib/dotjs/custom",
+          "realpath": "node_modules/ajv/lib/dotjs/custom.js"
+        }
+      ]
+    },
+    "node_modules/ajv/lib/dotjs/custom.js": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/refs/json-schema-draft-07.json": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/refs/data.json": {
+      "dependencies": []
+    },
+    "node_modules/har-validator/lib/error.js": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/afterRequest.json",
+          "realpath": "node_modules/har-schema/lib/afterRequest.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/beforeRequest.json",
+          "realpath": "node_modules/har-schema/lib/beforeRequest.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/browser.json",
+          "realpath": "node_modules/har-schema/lib/browser.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/cache.json",
+          "realpath": "node_modules/har-schema/lib/cache.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/content.json",
+          "realpath": "node_modules/har-schema/lib/content.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/cookie.json",
+          "realpath": "node_modules/har-schema/lib/cookie.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/creator.json",
+          "realpath": "node_modules/har-schema/lib/creator.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/entry.json",
+          "realpath": "node_modules/har-schema/lib/entry.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/har.json",
+          "realpath": "node_modules/har-schema/lib/har.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/header.json",
+          "realpath": "node_modules/har-schema/lib/header.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/log.json",
+          "realpath": "node_modules/har-schema/lib/log.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/page.json",
+          "realpath": "node_modules/har-schema/lib/page.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/pageTimings.json",
+          "realpath": "node_modules/har-schema/lib/pageTimings.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/postData.json",
+          "realpath": "node_modules/har-schema/lib/postData.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/query.json",
+          "realpath": "node_modules/har-schema/lib/query.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/request.json",
+          "realpath": "node_modules/har-schema/lib/request.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/response.json",
+          "realpath": "node_modules/har-schema/lib/response.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/har-schema/lib/timings.json",
+          "realpath": "node_modules/har-schema/lib/timings.json"
+        }
+      ]
+    },
+    "node_modules/har-schema/lib/afterRequest.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/beforeRequest.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/browser.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/cache.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/content.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/cookie.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/creator.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/entry.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/har.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/header.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/log.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/page.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/pageTimings.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/postData.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/query.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/request.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/response.json": {
+      "dependencies": []
+    },
+    "node_modules/har-schema/lib/timings.json": {
+      "dependencies": []
+    },
+    "node_modules/ajv/lib/refs/json-schema-draft-06.json": {
+      "dependencies": []
+    },
+    "lib/auth.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "caseless",
+          "realpath": "node_modules/caseless/index.js"
+        },
+        {
+          "type": "module",
+          "path": "uuid/v4",
+          "realpath": "node_modules/uuid/v4.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/helpers",
+          "realpath": "lib/helpers.js"
+        }
+      ]
+    },
+    "node_modules/uuid/v4.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/uuid/lib/rng",
+          "realpath": "node_modules/uuid/lib/rng.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/uuid/lib/bytesToUuid",
+          "realpath": "node_modules/uuid/lib/bytesToUuid.js"
+        }
+      ]
+    },
+    "node_modules/uuid/lib/rng.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        }
+      ]
+    },
+    "node_modules/uuid/lib/bytesToUuid.js": {
+      "dependencies": []
+    },
+    "lib/oauth.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "module",
+          "path": "qs",
+          "realpath": "node_modules/qs/lib/index.js"
+        },
+        {
+          "type": "module",
+          "path": "caseless",
+          "realpath": "node_modules/caseless/index.js"
+        },
+        {
+          "type": "module",
+          "path": "uuid/v4",
+          "realpath": "node_modules/uuid/v4.js"
+        },
+        {
+          "type": "module",
+          "path": "oauth-sign",
+          "realpath": "node_modules/oauth-sign/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    },
+    "node_modules/oauth-sign/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        }
+      ]
+    },
+    "lib/multipart.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "uuid/v4",
+          "realpath": "node_modules/uuid/v4.js"
+        },
+        {
+          "type": "module",
+          "path": "combined-stream",
+          "realpath": "node_modules/combined-stream/lib/combined_stream.js"
+        },
+        {
+          "type": "module",
+          "path": "isstream",
+          "realpath": "node_modules/isstream/isstream.js"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    },
+    "lib/redirect.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        }
+      ]
+    },
+    "lib/tunnel.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "module",
+          "path": "tunnel-agent",
+          "realpath": "node_modules/tunnel-agent/index.js"
+        }
+      ]
+    },
+    "node_modules/tunnel-agent/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "net",
+          "realpath": "net"
+        },
+        {
+          "type": "internal",
+          "path": "tls",
+          "realpath": "tls"
+        },
+        {
+          "type": "internal",
+          "path": "http",
+          "realpath": "http"
+        },
+        {
+          "type": "internal",
+          "path": "https",
+          "realpath": "https"
+        },
+        {
+          "type": "internal",
+          "path": "events",
+          "realpath": "events"
+        },
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
         },
         {
           "type": "module",
