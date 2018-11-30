@@ -1,0 +1,363 @@
+{
+  "cwd": "/Users/jviotti/Projects/personal/hawthorn/test/repos/request",
+  "paths": [ "*/**.js", "*.js" ],
+  "version": "1.0.0",
+  "files": {
+    "lib/auth.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "caseless",
+          "realpath": "node_modules/caseless/index.js"
+        },
+        {
+          "type": "module",
+          "path": "uuid/v4",
+          "realpath": "node_modules/uuid/v4.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/helpers",
+          "realpath": "lib/helpers.js"
+        }
+      ]
+    },
+    "lib/cookies.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "tough-cookie",
+          "realpath": "node_modules/tough-cookie/lib/cookie.js"
+        }
+      ]
+    },
+    "lib/getProxyFromURI.js": {
+      "dependencies": []
+    },
+    "lib/har.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "querystring",
+          "realpath": "querystring"
+        },
+        {
+          "type": "module",
+          "path": "har-validator",
+          "realpath": "node_modules/har-validator/lib/promise.js"
+        },
+        {
+          "type": "module",
+          "path": "extend",
+          "realpath": "node_modules/extend/index.js"
+        }
+      ]
+    },
+    "lib/hawk.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        }
+      ]
+    },
+    "lib/helpers.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "json-stringify-safe",
+          "realpath": "node_modules/json-stringify-safe/stringify.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    },
+    "lib/multipart.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "uuid/v4",
+          "realpath": "node_modules/uuid/v4.js"
+        },
+        {
+          "type": "module",
+          "path": "combined-stream",
+          "realpath": "node_modules/combined-stream/lib/combined_stream.js"
+        },
+        {
+          "type": "module",
+          "path": "isstream",
+          "realpath": "node_modules/isstream/isstream.js"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    },
+    "lib/oauth.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "module",
+          "path": "qs",
+          "realpath": "node_modules/qs/lib/index.js"
+        },
+        {
+          "type": "module",
+          "path": "caseless",
+          "realpath": "node_modules/caseless/index.js"
+        },
+        {
+          "type": "module",
+          "path": "uuid/v4",
+          "realpath": "node_modules/uuid/v4.js"
+        },
+        {
+          "type": "module",
+          "path": "oauth-sign",
+          "realpath": "node_modules/oauth-sign/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    },
+    "lib/querystring.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "qs",
+          "realpath": "node_modules/qs/lib/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "querystring",
+          "realpath": "querystring"
+        }
+      ]
+    },
+    "lib/redirect.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        }
+      ]
+    },
+    "lib/tunnel.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "module",
+          "path": "tunnel-agent",
+          "realpath": "node_modules/tunnel-agent/index.js"
+        }
+      ]
+    },
+    "index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "extend",
+          "realpath": "node_modules/extend/index.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/cookies",
+          "realpath": "lib/cookies.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/helpers",
+          "realpath": "lib/helpers.js"
+        },
+        {
+          "type": "local",
+          "path": "request",
+          "realpath": "request.js"
+        }
+      ]
+    },
+    "request.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "http",
+          "realpath": "http"
+        },
+        {
+          "type": "internal",
+          "path": "https",
+          "realpath": "https"
+        },
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        },
+        {
+          "type": "internal",
+          "path": "zlib",
+          "realpath": "zlib"
+        },
+        {
+          "type": "module",
+          "path": "aws-sign2",
+          "realpath": "node_modules/aws-sign2/index.js"
+        },
+        {
+          "type": "module",
+          "path": "aws4",
+          "realpath": "node_modules/aws4/aws4.js"
+        },
+        {
+          "type": "module",
+          "path": "http-signature",
+          "realpath": "node_modules/http-signature/lib/index.js"
+        },
+        {
+          "type": "module",
+          "path": "mime-types",
+          "realpath": "node_modules/mime-types/index.js"
+        },
+        {
+          "type": "module",
+          "path": "caseless",
+          "realpath": "node_modules/caseless/index.js"
+        },
+        {
+          "type": "module",
+          "path": "forever-agent",
+          "realpath": "node_modules/forever-agent/index.js"
+        },
+        {
+          "type": "module",
+          "path": "form-data",
+          "realpath": "node_modules/form-data/lib/form_data.js"
+        },
+        {
+          "type": "module",
+          "path": "extend",
+          "realpath": "node_modules/extend/index.js"
+        },
+        {
+          "type": "module",
+          "path": "isstream",
+          "realpath": "node_modules/isstream/isstream.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/helpers",
+          "realpath": "lib/helpers.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/cookies",
+          "realpath": "lib/cookies.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/getProxyFromURI",
+          "realpath": "lib/getProxyFromURI.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/hawk",
+          "realpath": "lib/hawk.js"
+        },
+        {
+          "type": "module",
+          "path": "performance-now",
+          "realpath": "node_modules/performance-now/lib/performance-now.js"
+        },
+        {
+          "type": "module",
+          "path": "is-typedarray",
+          "realpath": "node_modules/is-typedarray/index.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/querystring",
+          "realpath": "lib/querystring.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/har",
+          "realpath": "lib/har.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/auth",
+          "realpath": "lib/auth.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/oauth",
+          "realpath": "lib/oauth.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/multipart",
+          "realpath": "lib/multipart.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/redirect",
+          "realpath": "lib/redirect.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/tunnel",
+          "realpath": "lib/tunnel.js"
+        },
+        {
+          "type": "module",
+          "path": "safe-buffer",
+          "realpath": "node_modules/safe-buffer/index.js"
+        }
+      ]
+    }
+  }
+}

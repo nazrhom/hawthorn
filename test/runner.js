@@ -31,7 +31,8 @@ const hawthorn = require('..')
 
 const testCases = [
   'queryl',
-  'rimraf'
+  'rimraf',
+  'request'
 ]
 
 for (const testCase of testCases) {
