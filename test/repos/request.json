@@ -1,5 +1,5 @@
 {
-  "paths": [ "*/**.js", "*.js" ],
+  "paths": [ "*.js" ],
   "files": {
     "lib/auth.js": {
       "dependencies": [
