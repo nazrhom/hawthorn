@@ -24,58 +24,41 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-const fs = require('fs')
-const glob = require('glob')
+const tap = require('tap')
+const path = require('path')
+const utils = require('../../lib/utils')
 
-exports.promisify = async (fn) => {
-  return new Promise((resolve, reject) => {
-    fn((error, result) => {
-      if (error) {
-        return reject(error)
-      }
-
-      return resolve(result)
-    })
+tap.test('should expand nested globs', async (test) => {
+  const files = await utils.resolvePaths([ 'glob1/**/*.js' ], {
+    cwd: path.resolve(__dirname, '..', 'data')
   })
-}
 
-exports.resolvePaths = async (paths, options) => {
-  const result = new Set()
+  test.same(Array.from(files), [
+    'glob1/bar.js',
+    'glob1/foo.js',
+    'glob1/nested/baz.js'
+  ])
+})
 
-  for (const segment of paths) {
-    const expansions = await exports.promisify((callback) => {
-      glob(segment, {
-        nodir: true,
-        cwd: options.cwd
-      }, callback)
-    })
-
-    for (const expansion of expansions) {
-      result.add(expansion)
-    }
-  }
-
-  return result
-}
-
-exports.stat = async (filePath) => {
-  return exports.promisify((callback) => {
-    fs.stat(filePath, (error, stat) => {
-      if (error && error.code === 'ENOENT') {
-        return callback(null, null)
-      }
-
-      return callback(error, stat)
-    })
+tap.test('should expand one-level globs', async (test) => {
+  const files = await utils.resolvePaths([ 'glob1/*.ts' ], {
+    cwd: path.resolve(__dirname, '..', 'data')
   })
-}
 
-exports.mapAsync = async (set, mapper) => {
-  const result = []
+  test.same(Array.from(files), [
+    'glob1/baz.ts'
+  ])
+})
 
-  for (const element of set) {
-    result.push(await mapper(element))
-  }
+tap.test('should expand two nested globs', async (test) => {
+  const files = await utils.resolvePaths([ 'glob1/**/*.js', 'glob1/**/*.coffee' ], {
+    cwd: path.resolve(__dirname, '..', 'data')
+  })
 
-  return result
-}
+  test.same(Array.from(files), [
+    'glob1/bar.js',
+    'glob1/foo.js',
+    'glob1/nested/baz.js',
+    'glob1/nested2/foo.coffee'
+  ])
+})
