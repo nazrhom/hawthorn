@@ -33,7 +33,8 @@ const hawthorn = require('..')
 const testCases = [
   'queryl',
   'rimraf',
-  'request'
+  'request',
+  'package-json-main-directory'
 ]
 
 for (const testCase of testCases) {
