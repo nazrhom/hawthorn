@@ -1,7 +1,5 @@
 {
-  "cwd": "/Users/jviotti/Projects/personal/hawthorn/test/repos/rimraf",
   "paths": [ "*.js" ],
-  "version": "1.0.0",
   "files": {
     "bin.js": {
       "dependencies": [

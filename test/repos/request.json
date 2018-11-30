@@ -1,7 +1,5 @@
 {
-  "cwd": "/Users/jviotti/Projects/personal/hawthorn/test/repos/request",
   "paths": [ "*/**.js", "*.js" ],
-  "version": "1.0.0",
   "files": {
     "lib/auth.js": {
       "dependencies": [
