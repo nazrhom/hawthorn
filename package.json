@@ -9,7 +9,7 @@
   },
   "scripts": {
     "lint": "eslint lib test",
-    "tap": "tap test/unit/*.js | tap-mocha-reporter spec",
+    "tap": "tap --coverage test/unit/*.js | tap-mocha-reporter spec",
     "test": "npm run lint && npm run tap"
   },
   "ava": {
