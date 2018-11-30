@@ -1,7 +1,7 @@
 {
   "name": "hawthorn",
   "version": "1.0.0",
-  "description": "Analyze JavaScript require/import dependencies trees",
+  "description": "Statically parse dependency trees of JavaScript projects",
   "main": "lib/index.js",
   "bin": {
     "hawthorn": "lib/cli.js"
@@ -14,12 +14,6 @@
     "lint": "eslint lib test",
     "tap": "tap --coverage test/unit/*.js | tap-mocha-reporter spec",
     "test": "npm run lint && npm run tap"
-  },
-  "ava": {
-    "verbose": true,
-    "files": [
-      "test/**/*.spec.js"
-    ]
   },
   "author": "Juan Cruz Viotti <jv@jviotti.com>",
   "license": "Apache-2.0",
