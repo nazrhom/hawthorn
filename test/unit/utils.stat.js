@@ -31,3 +31,13 @@ tap.test('should return undefined if the file does not exist', async (test) => {
   const result = await utils.stat('/foobarbaz-xxx')
   test.notOk(result)
 })
+
+tap.test('should return a correct stat object given a file', async (test) => {
+  const result = await utils.stat(__filename)
+  test.notOk(result.isDirectory())
+})
+
+tap.test('should return a correct stat object given a directory', async (test) => {
+  const result = await utils.stat(__dirname)
+  test.ok(result.isDirectory())
+})
