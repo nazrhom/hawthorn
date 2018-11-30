@@ -8,8 +8,9 @@
     "url": "git@github.com:jviottti/hawthorn.git"
   },
   "scripts": {
-    "lint": "eslint lib test scripts",
-    "test": "tap test/unit/*.js | tap-mocha-reporter spec"
+    "lint": "eslint lib test",
+    "tap": "tap test/unit/*.js | tap-mocha-reporter spec",
+    "test": "npm run lint && npm run tap"
   },
   "ava": {
     "verbose": true,
