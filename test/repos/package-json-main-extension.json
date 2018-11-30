@@ -1,0 +1,23 @@
+{
+  "paths": [ "*.js" ],
+  "files": {
+    "foo.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "subdirectory",
+          "realpath": "subdirectory/lib/engine.io.js"
+        }
+      ]
+    },
+    "subdirectory/lib/engine.io.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    }
+  }
+}

@@ -34,7 +34,8 @@ const testCases = [
   'queryl',
   'rimraf',
   'request',
-  'package-json-main-directory'
+  'package-json-main-directory',
+  'package-json-main-extension'
 ]
 
 for (const testCase of testCases) {
