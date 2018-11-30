@@ -12,7 +12,7 @@
   },
   "scripts": {
     "lint": "eslint lib test",
-    "tap": "tap --coverage test/unit/*.js test/runner.js | tap-mocha-reporter spec",
+    "tap": "tap --coverage --coverage-report=text --no-browser test/unit/*.js test/runner.js | tap-mocha-reporter spec",
     "test": "npm run lint && npm run tap"
   },
   "author": "Juan Cruz Viotti <jv@jviotti.com>",
