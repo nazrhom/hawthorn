@@ -1,0 +1,27 @@
+{
+  "files": {
+    "lib/operations.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "lodash",
+          "realpath": "node_modules/lodash/lodash.js"
+        }
+      ]
+    },
+    "lib/queryl.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "lodash",
+          "realpath": "node_modules/lodash/lodash.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/operations",
+          "realpath": "lib/operations.js"
+        }
+      ]
+    }
+  }
+}
