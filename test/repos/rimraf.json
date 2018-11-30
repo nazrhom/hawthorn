@@ -1,0 +1,40 @@
+{
+  "cwd": "/Users/jviotti/Projects/personal/hawthorn/test/repos/rimraf",
+  "paths": [ "*.js" ],
+  "version": "1.0.0",
+  "files": {
+    "bin.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": ".",
+          "realpath": "rimraf.js"
+        }
+      ]
+    },
+    "rimraf.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "glob",
+          "realpath": "node_modules/glob/glob.js"
+        }
+      ]
+    }
+  }
+}

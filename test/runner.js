@@ -30,7 +30,8 @@ const packageJSON = require('../package.json')
 const hawthorn = require('..')
 
 const testCases = [
-  'queryl'
+  'queryl',
+  'rimraf'
 ]
 
 for (const testCase of testCases) {
