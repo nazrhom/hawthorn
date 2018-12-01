@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "builtin-modules": "^3.0.0",
+    "debug": "^4.1.0",
     "esprima": "^4.0.1",
     "esprima-walk": "^0.1.0",
     "glob": "^7.1.3",
