@@ -35,6 +35,7 @@ const testCases = [
   'rimraf',
   'request',
   'encoding',
+  'logform',
   'package-json-main-directory',
   'package-json-main-extension'
 ]

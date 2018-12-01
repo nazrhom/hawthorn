@@ -38,16 +38,19 @@ tap.test('should parse a CommonJS file', (test) => {
 
   const result = ast.getDependencies('foo/bar.js', text)
 
-  test.same(result, [
-    {
-      type: 'module',
-      path: 'fs'
-    },
-    {
-      type: 'local',
-      path: 'foo/utils'
-    }
-  ])
+  test.same(result, {
+    dynamic: false,
+    content: [
+      {
+        type: 'module',
+        path: 'fs'
+      },
+      {
+        type: 'local',
+        path: 'foo/utils'
+      }
+    ]
+  })
 
   test.end()
 })
@@ -62,16 +65,19 @@ tap.test('should parse a CommonJS file with an upper local require', (test) => {
 
   const result = ast.getDependencies('foo/bar.js', text)
 
-  test.same(result, [
-    {
-      type: 'module',
-      path: 'fs'
-    },
-    {
-      type: 'local',
-      path: 'utils'
-    }
-  ])
+  test.same(result, {
+    dynamic: false,
+    content: [
+      {
+        type: 'module',
+        path: 'fs'
+      },
+      {
+        type: 'local',
+        path: 'utils'
+      }
+    ]
+  })
 
   test.end()
 })

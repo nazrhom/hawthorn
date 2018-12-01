@@ -1,0 +1,487 @@
+{
+  "paths": [ "*.js" ],
+  "files": {
+    "align.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        }
+      ]
+    },
+    "format.js": {
+      "dependencies": []
+    },
+    "browser.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "levels",
+          "realpath": "levels.js"
+        },
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        },
+        {
+          "type": "local",
+          "path": "align",
+          "realpath": "align.js"
+        },
+        {
+          "type": "local",
+          "path": "cli",
+          "realpath": "cli.js"
+        },
+        {
+          "type": "local",
+          "path": "combine",
+          "realpath": "combine.js"
+        },
+        {
+          "type": "local",
+          "path": "colorize",
+          "realpath": "colorize.js"
+        },
+        {
+          "type": "local",
+          "path": "json",
+          "realpath": "json.js"
+        },
+        {
+          "type": "local",
+          "path": "label",
+          "realpath": "label.js"
+        },
+        {
+          "type": "local",
+          "path": "logstash",
+          "realpath": "logstash.js"
+        },
+        {
+          "type": "local",
+          "path": "metadata",
+          "realpath": "metadata.js"
+        },
+        {
+          "type": "local",
+          "path": "pad-levels",
+          "realpath": "pad-levels.js"
+        },
+        {
+          "type": "local",
+          "path": "pretty-print",
+          "realpath": "pretty-print.js"
+        },
+        {
+          "type": "local",
+          "path": "printf",
+          "realpath": "printf.js"
+        },
+        {
+          "type": "local",
+          "path": "simple",
+          "realpath": "simple.js"
+        },
+        {
+          "type": "local",
+          "path": "splat",
+          "realpath": "splat.js"
+        },
+        {
+          "type": "local",
+          "path": "timestamp",
+          "realpath": "timestamp.js"
+        },
+        {
+          "type": "local",
+          "path": "uncolorize",
+          "realpath": "uncolorize.js"
+        }
+      ]
+    },
+    "levels.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "colorize",
+          "realpath": "colorize.js"
+        }
+      ]
+    },
+    "colorize.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "colors/safe",
+          "realpath": "node_modules/colors/safe.js"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        }
+      ]
+    },
+    "node_modules/colors/safe.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/colors",
+          "realpath": "node_modules/colors/lib/colors.js"
+        }
+      ]
+    },
+    "node_modules/colors/lib/colors.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/custom/trap",
+          "realpath": "node_modules/colors/lib/custom/trap.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/custom/zalgo",
+          "realpath": "node_modules/colors/lib/custom/zalgo.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/styles",
+          "realpath": "node_modules/colors/lib/styles.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/system/supports-colors",
+          "realpath": "node_modules/colors/lib/system/supports-colors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/maps/america",
+          "realpath": "node_modules/colors/lib/maps/america.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/maps/zebra",
+          "realpath": "node_modules/colors/lib/maps/zebra.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/maps/rainbow",
+          "realpath": "node_modules/colors/lib/maps/rainbow.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/maps/random",
+          "realpath": "node_modules/colors/lib/maps/random.js"
+        }
+      ]
+    },
+    "node_modules/colors/lib/custom/trap.js": {
+      "dependencies": []
+    },
+    "node_modules/colors/lib/custom/zalgo.js": {
+      "dependencies": []
+    },
+    "node_modules/colors/lib/styles.js": {
+      "dependencies": []
+    },
+    "node_modules/colors/lib/system/supports-colors.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "os",
+          "realpath": "os"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/colors/lib/system/has-flag.js",
+          "realpath": "node_modules/colors/lib/system/has-flag.js"
+        }
+      ]
+    },
+    "node_modules/colors/lib/system/has-flag.js": {
+      "dependencies": []
+    },
+    "node_modules/colors/lib/maps/america.js": {
+      "dependencies": []
+    },
+    "node_modules/colors/lib/maps/zebra.js": {
+      "dependencies": []
+    },
+    "node_modules/colors/lib/maps/rainbow.js": {
+      "dependencies": []
+    },
+    "node_modules/colors/lib/maps/random.js": {
+      "dependencies": []
+    },
+    "node_modules/triple-beam/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/triple-beam/config",
+          "realpath": "node_modules/triple-beam/config/index.js"
+        }
+      ]
+    },
+    "node_modules/triple-beam/config/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/triple-beam/config/cli",
+          "realpath": "node_modules/triple-beam/config/cli.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/triple-beam/config/npm",
+          "realpath": "node_modules/triple-beam/config/npm.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/triple-beam/config/syslog",
+          "realpath": "node_modules/triple-beam/config/syslog.js"
+        }
+      ]
+    },
+    "node_modules/triple-beam/config/cli.js": {
+      "dependencies": []
+    },
+    "node_modules/triple-beam/config/npm.js": {
+      "dependencies": []
+    },
+    "node_modules/triple-beam/config/syslog.js": {
+      "dependencies": []
+    },
+    "cli.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "colorize",
+          "realpath": "colorize.js"
+        },
+        {
+          "type": "local",
+          "path": "pad-levels",
+          "realpath": "pad-levels.js"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        }
+      ]
+    },
+    "pad-levels.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        }
+      ]
+    },
+    "combine.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        }
+      ]
+    },
+    "json.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        },
+        {
+          "type": "module",
+          "path": "fast-safe-stringify",
+          "realpath": "node_modules/fast-safe-stringify/index.js"
+        }
+      ]
+    },
+    "node_modules/fast-safe-stringify/index.js": {
+      "dependencies": []
+    },
+    "label.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        }
+      ]
+    },
+    "logstash.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        },
+        {
+          "type": "module",
+          "path": "fast-safe-stringify",
+          "realpath": "node_modules/fast-safe-stringify/index.js"
+        }
+      ]
+    },
+    "metadata.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        }
+      ]
+    },
+    "pretty-print.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ]
+    },
+    "printf.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        }
+      ]
+    },
+    "simple.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        },
+        {
+          "type": "module",
+          "path": "fast-safe-stringify",
+          "realpath": "node_modules/fast-safe-stringify/index.js"
+        }
+      ]
+    },
+    "splat.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        }
+      ]
+    },
+    "timestamp.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "fecha",
+          "realpath": "node_modules/fecha/fecha.js"
+        },
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        }
+      ]
+    },
+    "node_modules/fecha/fecha.js": {
+      "dependencies": []
+    },
+    "uncolorize.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "colors/safe",
+          "realpath": "node_modules/colors/safe.js"
+        },
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        },
+        {
+          "type": "module",
+          "path": "triple-beam",
+          "realpath": "node_modules/triple-beam/index.js"
+        }
+      ]
+    },
+    "index.js": {
+      "dynamic": true,
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "levels",
+          "realpath": "levels.js"
+        },
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        }
+      ]
+    },
+    "ms.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "format",
+          "realpath": "format.js"
+        },
+        {
+          "type": "module",
+          "path": "ms",
+          "realpath": "node_modules/ms/index.js"
+        }
+      ]
+    },
+    "node_modules/ms/index.js": {
+      "dependencies": []
+    }
+  }
+}
