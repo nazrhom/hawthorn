@@ -32,7 +32,7 @@ const hawthorn = require('..')
 
 const testCases = [
   // 'queryl',
-  // 'rimraf',
+  'rimraf',
   // 'request',
   // 'encoding',
   // 'logform',
