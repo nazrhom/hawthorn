@@ -1,0 +1,32 @@
+{
+  "paths": [ "*.js" ],
+  "files": {
+    "foo.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "bar",
+          "realpath": "node_modules/bar/index.js"
+        }
+      ]
+    },
+    "node_modules/bar/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "baz",
+          "realpath": "node_modules/bar/node_modules/baz/index.js"
+        }
+      ]
+    },
+    "node_modules/bar/node_modules/baz/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    }
+  }
+}
