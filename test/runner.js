@@ -35,8 +35,8 @@ const testCases = [
   'rimraf',
   // 'request',
   'encoding',
-  // 'logform',
-  // 'raven-node',
+  'logform',
+  'raven-node',
   'nested-node-modules',
   'package-json-main-directory',
   'package-json-main-extension'
