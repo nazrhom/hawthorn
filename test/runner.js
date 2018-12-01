@@ -31,10 +31,10 @@ const packageJSON = require('../package.json')
 const hawthorn = require('..')
 
 const testCases = [
-  // 'queryl',
+  'queryl',
   'rimraf',
   // 'request',
-  // 'encoding',
+  'encoding',
   // 'logform',
   // 'raven-node',
   'nested-node-modules',
