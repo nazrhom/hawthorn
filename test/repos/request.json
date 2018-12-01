@@ -87,7 +87,7 @@
         {
           "type": "module",
           "path": "punycode",
-          "realpath": "node_modules/punycode/punycode.js"
+          "realpath": "node_modules/tough-cookie/node_modules/punycode/punycode.js"
         }
       ]
     },
@@ -121,6 +121,9 @@
       "dependencies": []
     },
     "node_modules/tough-cookie/lib/store.js": {
+      "dependencies": []
+    },
+    "node_modules/tough-cookie/node_modules/punycode/punycode.js": {
       "dependencies": []
     },
     "node_modules/tough-cookie/lib/memstore.js": {
