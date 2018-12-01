@@ -36,6 +36,7 @@ const testCases = [
   'request',
   'encoding',
   'logform',
+  'raven-node',
   'package-json-main-directory',
   'package-json-main-extension'
 ]

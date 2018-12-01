@@ -1,0 +1,375 @@
+{
+  "paths": [ "*.js", "lib/**/*.js" ],
+  "files": {
+    "index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "lib/client",
+          "realpath": "lib/client.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/transports",
+          "realpath": "lib/transports.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/parsers",
+          "realpath": "lib/parsers.js"
+        }
+      ]
+    },
+    "lib/client.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "vendor/json-stringify-safe",
+          "realpath": "vendor/json-stringify-safe.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/parsers",
+          "realpath": "lib/parsers.js"
+        },
+        {
+          "type": "internal",
+          "path": "zlib",
+          "realpath": "zlib"
+        },
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        },
+        {
+          "type": "module",
+          "path": "uuid",
+          "realpath": "node_modules/uuid/index.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/transports",
+          "realpath": "lib/transports.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "events",
+          "realpath": "events"
+        },
+        {
+          "type": "internal",
+          "path": "domain",
+          "realpath": "domain"
+        },
+        {
+          "type": "module",
+          "path": "md5",
+          "realpath": "node_modules/md5/md5.js"
+        },
+        {
+          "type": "module",
+          "path": "async-limiter",
+          "realpath": "node_modules/async-limiter/index.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/instrumentation/instrumentor",
+          "realpath": "lib/instrumentation/instrumentor.js"
+        },
+        {
+          "type": "local",
+          "path": "package.json",
+          "realpath": "package.json"
+        },
+        {
+          "type": "internal",
+          "path": "os",
+          "realpath": "os"
+        }
+      ]
+    },
+    "vendor/json-stringify-safe.js": {
+      "dependencies": []
+    },
+    "lib/parsers.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "cookie",
+          "realpath": "node_modules/cookie/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "local",
+          "path": "vendor/json-stringify-safe",
+          "realpath": "vendor/json-stringify-safe.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        }
+      ]
+    },
+    "node_modules/cookie/index.js": {
+      "dependencies": []
+    },
+    "lib/utils.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "url",
+          "realpath": "url"
+        },
+        {
+          "type": "local",
+          "path": "lib/transports",
+          "realpath": "lib/transports.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "local",
+          "path": "vendor/node-lsmod",
+          "realpath": "vendor/node-lsmod.js"
+        },
+        {
+          "type": "module",
+          "path": "stack-trace",
+          "realpath": "node_modules/stack-trace/lib/stack-trace.js"
+        },
+        {
+          "type": "module",
+          "path": "async-limiter",
+          "realpath": "node_modules/async-limiter/index.js"
+        },
+        {
+          "type": "local",
+          "path": "vendor/json-stringify-safe",
+          "realpath": "vendor/json-stringify-safe.js"
+        },
+        {
+          "type": "local",
+          "path": "package.json",
+          "realpath": "package.json"
+        }
+      ]
+    },
+    "lib/transports.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "events",
+          "realpath": "events"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "timed-out",
+          "realpath": "node_modules/timed-out/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "http",
+          "realpath": "http"
+        },
+        {
+          "type": "internal",
+          "path": "https",
+          "realpath": "https"
+        }
+      ]
+    },
+    "node_modules/timed-out/index.js": {
+      "dependencies": []
+    },
+    "vendor/node-lsmod.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        }
+      ]
+    },
+    "node_modules/stack-trace/lib/stack-trace.js": {
+      "dependencies": []
+    },
+    "node_modules/async-limiter/index.js": {
+      "dependencies": []
+    },
+    "package.json": {
+      "dependencies": []
+    },
+    "node_modules/uuid/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/uuid/v1",
+          "realpath": "node_modules/uuid/v1.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/uuid/v4",
+          "realpath": "node_modules/uuid/v4.js"
+        }
+      ]
+    },
+    "node_modules/uuid/v1.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/uuid/lib/rng",
+          "realpath": "node_modules/uuid/lib/rng.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/uuid/lib/bytesToUuid",
+          "realpath": "node_modules/uuid/lib/bytesToUuid.js"
+        }
+      ]
+    },
+    "node_modules/uuid/lib/rng.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "crypto",
+          "realpath": "crypto"
+        }
+      ]
+    },
+    "node_modules/uuid/lib/bytesToUuid.js": {
+      "dependencies": []
+    },
+    "node_modules/uuid/v4.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/uuid/lib/rng",
+          "realpath": "node_modules/uuid/lib/rng.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/uuid/lib/bytesToUuid",
+          "realpath": "node_modules/uuid/lib/bytesToUuid.js"
+        }
+      ]
+    },
+    "node_modules/md5/md5.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "crypt",
+          "realpath": "node_modules/crypt/crypt.js"
+        },
+        {
+          "type": "module",
+          "path": "is-buffer",
+          "realpath": "node_modules/is-buffer/index.js"
+        },
+        {
+          "type": "module",
+          "path": "charenc",
+          "realpath": "node_modules/charenc/charenc.js"
+        }
+      ]
+    },
+    "node_modules/crypt/crypt.js": {
+      "dependencies": []
+    },
+    "node_modules/is-buffer/index.js": {
+      "dependencies": []
+    },
+    "node_modules/charenc/charenc.js": {
+      "dependencies": []
+    },
+    "lib/instrumentation/instrumentor.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        },
+        {
+          "type": "internal",
+          "path": "module",
+          "realpath": "module"
+        },
+        {
+          "type": "internal",
+          "path": "console",
+          "realpath": "console"
+        },
+        {
+          "type": "internal",
+          "path": "http",
+          "realpath": "http"
+        }
+      ],
+      "dynamic": true
+    },
+    "lib/instrumentation/console.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        }
+      ]
+    },
+    "lib/instrumentation/http.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        }
+      ]
+    },
+    "lib/instrumentation/pg.js": {
+      "dependencies": []
+    }
+  }
+}
