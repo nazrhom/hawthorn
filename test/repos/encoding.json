@@ -1,0 +1,265 @@
+{
+  "paths": [ "lib/**/*.js" ],
+  "files": {
+    "lib/encoding.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "iconv-lite",
+          "realpath": "node_modules/iconv-lite/lib/index.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/iconv-loader",
+          "realpath": "lib/iconv-loader.js"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/lib/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/lib/bom-handling",
+          "realpath": "node_modules/iconv-lite/lib/bom-handling.js"
+        },
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/lib/extend-node",
+          "realpath": "node_modules/iconv-lite/lib/extend-node.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/lib/streams",
+          "realpath": "node_modules/iconv-lite/lib/streams.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings",
+          "realpath": "node_modules/iconv-lite/encodings/index.js"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/lib/bom-handling.js": {
+      "dependencies": []
+    },
+    "node_modules/safer-buffer/safer.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "buffer",
+          "realpath": "buffer"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/lib/extend-node.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "buffer",
+          "realpath": "buffer"
+        },
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/lib/streams.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "buffer",
+          "realpath": "buffer"
+        },
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/internal",
+          "realpath": "node_modules/iconv-lite/encodings/internal.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/utf16",
+          "realpath": "node_modules/iconv-lite/encodings/utf16.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/utf7",
+          "realpath": "node_modules/iconv-lite/encodings/utf7.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/sbcs-codec",
+          "realpath": "node_modules/iconv-lite/encodings/sbcs-codec.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/sbcs-data",
+          "realpath": "node_modules/iconv-lite/encodings/sbcs-data.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/sbcs-data-generated",
+          "realpath": "node_modules/iconv-lite/encodings/sbcs-data-generated.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/dbcs-codec",
+          "realpath": "node_modules/iconv-lite/encodings/dbcs-codec.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/dbcs-data",
+          "realpath": "node_modules/iconv-lite/encodings/dbcs-data.js"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/internal.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        },
+        {
+          "type": "internal",
+          "path": "string_decoder",
+          "realpath": "string_decoder"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/utf16.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/utf7.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/sbcs-codec.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/sbcs-data.js": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/sbcs-data-generated.js": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/dbcs-codec.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "safer-buffer",
+          "realpath": "node_modules/safer-buffer/safer.js"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/dbcs-data.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/shiftjis.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/shiftjis.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/eucjp.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/eucjp.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/cp936.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/cp936.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/gb18030-ranges.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/gb18030-ranges.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/cp949.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/cp949.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/cp950.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/cp950.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/gbk-added.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/gbk-added.json"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/iconv-lite/encodings/tables/big5-added.json",
+          "realpath": "node_modules/iconv-lite/encodings/tables/big5-added.json"
+        }
+      ]
+    },
+    "node_modules/iconv-lite/encodings/tables/shiftjis.json": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/tables/eucjp.json": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/tables/cp936.json": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/tables/gb18030-ranges.json": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/tables/cp949.json": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/tables/cp950.json": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/tables/gbk-added.json": {
+      "dependencies": []
+    },
+    "node_modules/iconv-lite/encodings/tables/big5-added.json": {
+      "dependencies": []
+    },
+    "lib/iconv-loader.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "iconv",
+          "realpath": null
+        }
+      ]
+    }
+  }
+}

@@ -34,6 +34,7 @@ const testCases = [
   'queryl',
   'rimraf',
   'request',
+  'encoding',
   'package-json-main-directory',
   'package-json-main-extension'
 ]
