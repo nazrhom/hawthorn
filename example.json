@@ -1,0 +1,1345 @@
+{
+  "cwd": "/Users/jviotti/Projects/personal/hawthorn",
+  "version": "1.0.0",
+  "files": {
+    "lib/ast.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "esprima",
+          "realpath": "node_modules/esprima/dist/esprima.js"
+        },
+        {
+          "type": "module",
+          "path": "esprima-walk",
+          "realpath": "node_modules/esprima-walk/esprima-walk.js"
+        },
+        {
+          "type": "local",
+          "path": "package.json",
+          "realpath": "package.json"
+        },
+        {
+          "type": "module",
+          "path": "debug",
+          "realpath": "node_modules/debug/src/index.js"
+        }
+      ]
+    },
+    "node_modules/esprima/dist/esprima.js": {
+      "dependencies": []
+    },
+    "node_modules/esprima-walk/esprima-walk.js": {
+      "dependencies": []
+    },
+    "package.json": {
+      "dependencies": []
+    },
+    "node_modules/debug/src/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/debug/src/browser.js",
+          "realpath": "node_modules/debug/src/browser.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/debug/src/node.js",
+          "realpath": "node_modules/debug/src/node.js"
+        }
+      ]
+    },
+    "node_modules/debug/src/browser.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/debug/src/common",
+          "realpath": "node_modules/debug/src/common.js"
+        }
+      ]
+    },
+    "node_modules/debug/src/common.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "ms",
+          "realpath": "node_modules/ms/index.js"
+        }
+      ]
+    },
+    "node_modules/ms/index.js": {
+      "dependencies": []
+    },
+    "node_modules/debug/src/node.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "tty",
+          "realpath": "tty"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/debug/src/common",
+          "realpath": "node_modules/debug/src/common.js"
+        },
+        {
+          "type": "module",
+          "path": "supports-color",
+          "realpath": "node_modules/supports-color/index.js"
+        }
+      ]
+    },
+    "node_modules/supports-color/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "os",
+          "realpath": "os"
+        },
+        {
+          "type": "module",
+          "path": "has-flag",
+          "realpath": "node_modules/supports-color/node_modules/has-flag/index.js"
+        }
+      ]
+    },
+    "node_modules/supports-color/node_modules/has-flag/index.js": {
+      "dependencies": []
+    },
+    "lib/cli.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "yargs",
+          "realpath": "node_modules/yargs/index.js"
+        },
+        {
+          "type": "local",
+          "path": ".",
+          "realpath": "lib/index.js"
+        }
+      ]
+    },
+    "node_modules/yargs/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/yargs/yargs",
+          "realpath": "node_modules/yargs/yargs.js"
+        }
+      ]
+    },
+    "node_modules/yargs/yargs.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/argsert",
+          "realpath": "node_modules/yargs/lib/argsert.js"
+        },
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/command",
+          "realpath": "node_modules/yargs/lib/command.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/completion",
+          "realpath": "node_modules/yargs/lib/completion.js"
+        },
+        {
+          "type": "module",
+          "path": "yargs-parser",
+          "realpath": "node_modules/yargs-parser/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/usage",
+          "realpath": "node_modules/yargs/lib/usage.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/validation",
+          "realpath": "node_modules/yargs/lib/validation.js"
+        },
+        {
+          "type": "module",
+          "path": "y18n",
+          "realpath": "node_modules/y18n/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/obj-filter",
+          "realpath": "node_modules/yargs/lib/obj-filter.js"
+        },
+        {
+          "type": "module",
+          "path": "set-blocking",
+          "realpath": "node_modules/set-blocking/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/apply-extends",
+          "realpath": "node_modules/yargs/lib/apply-extends.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/middleware",
+          "realpath": "node_modules/yargs/lib/middleware.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/yerror",
+          "realpath": "node_modules/yargs/lib/yerror.js"
+        },
+        {
+          "type": "module",
+          "path": "find-up",
+          "realpath": "node_modules/find-up/index.js"
+        },
+        {
+          "type": "module",
+          "path": "os-locale",
+          "realpath": "node_modules/os-locale/index.js"
+        },
+        {
+          "type": "module",
+          "path": "get-caller-file",
+          "realpath": "node_modules/get-caller-file/index.js"
+        },
+        {
+          "type": "module",
+          "path": "require-main-filename",
+          "realpath": "node_modules/require-main-filename/index.js"
+        }
+      ]
+    },
+    "node_modules/yargs/lib/argsert.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/yerror",
+          "realpath": "node_modules/yargs/lib/yerror.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/command",
+          "realpath": "node_modules/yargs/lib/command.js"
+        }
+      ]
+    },
+    "node_modules/yargs/lib/yerror.js": {
+      "dependencies": []
+    },
+    "node_modules/yargs/lib/command.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "yargs-parser",
+          "realpath": "node_modules/yargs-parser/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "which-module",
+          "realpath": "node_modules/which-module/index.js"
+        },
+        {
+          "type": "module",
+          "path": "require-directory",
+          "realpath": "node_modules/require-directory/index.js"
+        }
+      ]
+    },
+    "node_modules/yargs-parser/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "camelcase",
+          "realpath": "node_modules/yargs-parser/node_modules/camelcase/index.js"
+        },
+        {
+          "type": "module",
+          "path": "decamelize",
+          "realpath": "node_modules/decamelize/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs-parser/lib/tokenize-arg-string",
+          "realpath": "node_modules/yargs-parser/lib/tokenize-arg-string.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ],
+      "dynamic": true
+    },
+    "node_modules/yargs-parser/node_modules/camelcase/index.js": {
+      "dependencies": []
+    },
+    "node_modules/decamelize/index.js": {
+      "dependencies": []
+    },
+    "node_modules/yargs-parser/lib/tokenize-arg-string.js": {
+      "dependencies": []
+    },
+    "node_modules/which-module/index.js": {
+      "dependencies": []
+    },
+    "node_modules/require-directory/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        }
+      ]
+    },
+    "node_modules/yargs/lib/completion.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        }
+      ]
+    },
+    "node_modules/yargs/lib/usage.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "string-width",
+          "realpath": "node_modules/string-width/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/obj-filter",
+          "realpath": "node_modules/yargs/lib/obj-filter.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "set-blocking",
+          "realpath": "node_modules/set-blocking/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/yerror",
+          "realpath": "node_modules/yargs/lib/yerror.js"
+        },
+        {
+          "type": "module",
+          "path": "cliui",
+          "realpath": "node_modules/cliui/index.js"
+        },
+        {
+          "type": "module",
+          "path": "decamelize",
+          "realpath": "node_modules/decamelize/index.js"
+        }
+      ]
+    },
+    "node_modules/string-width/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "strip-ansi",
+          "realpath": "node_modules/strip-ansi/index.js"
+        },
+        {
+          "type": "module",
+          "path": "is-fullwidth-code-point",
+          "realpath": "node_modules/is-fullwidth-code-point/index.js"
+        }
+      ]
+    },
+    "node_modules/strip-ansi/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "ansi-regex",
+          "realpath": "node_modules/strip-ansi/node_modules/ansi-regex/index.js"
+        }
+      ]
+    },
+    "node_modules/strip-ansi/node_modules/ansi-regex/index.js": {
+      "dependencies": []
+    },
+    "node_modules/is-fullwidth-code-point/index.js": {
+      "dependencies": []
+    },
+    "node_modules/yargs/lib/obj-filter.js": {
+      "dependencies": []
+    },
+    "node_modules/set-blocking/index.js": {
+      "dependencies": []
+    },
+    "node_modules/cliui/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "string-width",
+          "realpath": "node_modules/string-width/index.js"
+        },
+        {
+          "type": "module",
+          "path": "strip-ansi",
+          "realpath": "node_modules/strip-ansi/index.js"
+        },
+        {
+          "type": "module",
+          "path": "wrap-ansi",
+          "realpath": "node_modules/wrap-ansi/index.js"
+        }
+      ]
+    },
+    "node_modules/wrap-ansi/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "string-width",
+          "realpath": "node_modules/wrap-ansi/node_modules/string-width/index.js"
+        },
+        {
+          "type": "module",
+          "path": "strip-ansi",
+          "realpath": "node_modules/wrap-ansi/node_modules/strip-ansi/index.js"
+        }
+      ]
+    },
+    "node_modules/wrap-ansi/node_modules/string-width/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "strip-ansi",
+          "realpath": "node_modules/wrap-ansi/node_modules/strip-ansi/index.js"
+        },
+        {
+          "type": "module",
+          "path": "code-point-at",
+          "realpath": "node_modules/code-point-at/index.js"
+        },
+        {
+          "type": "module",
+          "path": "is-fullwidth-code-point",
+          "realpath": "node_modules/wrap-ansi/node_modules/is-fullwidth-code-point/index.js"
+        }
+      ]
+    },
+    "node_modules/wrap-ansi/node_modules/strip-ansi/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "ansi-regex",
+          "realpath": "node_modules/ansi-regex/index.js"
+        }
+      ]
+    },
+    "node_modules/ansi-regex/index.js": {
+      "dependencies": []
+    },
+    "node_modules/code-point-at/index.js": {
+      "dependencies": []
+    },
+    "node_modules/wrap-ansi/node_modules/is-fullwidth-code-point/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "number-is-nan",
+          "realpath": "node_modules/number-is-nan/index.js"
+        }
+      ]
+    },
+    "node_modules/number-is-nan/index.js": {
+      "dependencies": []
+    },
+    "node_modules/yargs/lib/validation.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/argsert",
+          "realpath": "node_modules/yargs/lib/argsert.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/obj-filter",
+          "realpath": "node_modules/yargs/lib/obj-filter.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/levenshtein",
+          "realpath": "node_modules/yargs/lib/levenshtein.js"
+        }
+      ]
+    },
+    "node_modules/yargs/lib/levenshtein.js": {
+      "dependencies": []
+    },
+    "node_modules/y18n/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ]
+    },
+    "node_modules/yargs/lib/apply-extends.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/yargs/lib/yerror",
+          "realpath": "node_modules/yargs/lib/yerror.js"
+        }
+      ],
+      "dynamic": true
+    },
+    "node_modules/yargs/lib/middleware.js": {
+      "dependencies": []
+    },
+    "node_modules/find-up/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "locate-path",
+          "realpath": "node_modules/locate-path/index.js"
+        }
+      ]
+    },
+    "node_modules/locate-path/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "path-exists",
+          "realpath": "node_modules/path-exists/index.js"
+        },
+        {
+          "type": "module",
+          "path": "p-locate",
+          "realpath": "node_modules/p-locate/index.js"
+        }
+      ]
+    },
+    "node_modules/path-exists/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    },
+    "node_modules/p-locate/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "p-limit",
+          "realpath": "node_modules/p-limit/index.js"
+        }
+      ]
+    },
+    "node_modules/p-limit/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "p-try",
+          "realpath": "node_modules/p-try/index.js"
+        }
+      ]
+    },
+    "node_modules/p-try/index.js": {
+      "dependencies": []
+    },
+    "node_modules/os-locale/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "execa",
+          "realpath": "node_modules/os-locale/node_modules/execa/index.js"
+        },
+        {
+          "type": "module",
+          "path": "lcid",
+          "realpath": "node_modules/lcid/index.js"
+        },
+        {
+          "type": "module",
+          "path": "mem",
+          "realpath": "node_modules/mem/index.js"
+        }
+      ]
+    },
+    "node_modules/os-locale/node_modules/execa/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "child_process",
+          "realpath": "child_process"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "cross-spawn",
+          "realpath": "node_modules/os-locale/node_modules/cross-spawn/index.js"
+        },
+        {
+          "type": "module",
+          "path": "strip-eof",
+          "realpath": "node_modules/strip-eof/index.js"
+        },
+        {
+          "type": "module",
+          "path": "npm-run-path",
+          "realpath": "node_modules/npm-run-path/index.js"
+        },
+        {
+          "type": "module",
+          "path": "is-stream",
+          "realpath": "node_modules/is-stream/index.js"
+        },
+        {
+          "type": "module",
+          "path": "get-stream",
+          "realpath": "node_modules/get-stream/index.js"
+        },
+        {
+          "type": "module",
+          "path": "p-finally",
+          "realpath": "node_modules/p-finally/index.js"
+        },
+        {
+          "type": "module",
+          "path": "signal-exit",
+          "realpath": "node_modules/signal-exit/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/os-locale/node_modules/execa/lib/errname",
+          "realpath": "node_modules/os-locale/node_modules/execa/lib/errname.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/os-locale/node_modules/execa/lib/stdio",
+          "realpath": "node_modules/os-locale/node_modules/execa/lib/stdio.js"
+        }
+      ]
+    },
+    "node_modules/os-locale/node_modules/cross-spawn/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "child_process",
+          "realpath": "child_process"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/os-locale/node_modules/cross-spawn/lib/parse",
+          "realpath": "node_modules/os-locale/node_modules/cross-spawn/lib/parse.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/os-locale/node_modules/cross-spawn/lib/enoent",
+          "realpath": "node_modules/os-locale/node_modules/cross-spawn/lib/enoent.js"
+        }
+      ]
+    },
+    "node_modules/os-locale/node_modules/cross-spawn/lib/parse.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "nice-try",
+          "realpath": "node_modules/nice-try/src/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/os-locale/node_modules/cross-spawn/lib/util/resolveCommand",
+          "realpath": "node_modules/os-locale/node_modules/cross-spawn/lib/util/resolveCommand.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/os-locale/node_modules/cross-spawn/lib/util/escape",
+          "realpath": "node_modules/os-locale/node_modules/cross-spawn/lib/util/escape.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/os-locale/node_modules/cross-spawn/lib/util/readShebang",
+          "realpath": "node_modules/os-locale/node_modules/cross-spawn/lib/util/readShebang.js"
+        },
+        {
+          "type": "module",
+          "path": "semver",
+          "realpath": "node_modules/semver/semver.js"
+        }
+      ]
+    },
+    "node_modules/nice-try/src/index.js": {
+      "dependencies": []
+    },
+    "node_modules/os-locale/node_modules/cross-spawn/lib/util/resolveCommand.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "which",
+          "realpath": "node_modules/which/which.js"
+        },
+        {
+          "type": "module",
+          "path": "path-key",
+          "realpath": "node_modules/path-key/index.js"
+        }
+      ]
+    },
+    "node_modules/which/which.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "isexe",
+          "realpath": "node_modules/isexe/index.js"
+        }
+      ]
+    },
+    "node_modules/isexe/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/isexe/windows.js",
+          "realpath": "node_modules/isexe/windows.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/isexe/mode.js",
+          "realpath": "node_modules/isexe/mode.js"
+        }
+      ]
+    },
+    "node_modules/isexe/windows.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    },
+    "node_modules/isexe/mode.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    },
+    "node_modules/path-key/index.js": {
+      "dependencies": []
+    },
+    "node_modules/os-locale/node_modules/cross-spawn/lib/util/escape.js": {
+      "dependencies": []
+    },
+    "node_modules/os-locale/node_modules/cross-spawn/lib/util/readShebang.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "shebang-command",
+          "realpath": "node_modules/shebang-command/index.js"
+        }
+      ]
+    },
+    "node_modules/shebang-command/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "shebang-regex",
+          "realpath": "node_modules/shebang-regex/index.js"
+        }
+      ]
+    },
+    "node_modules/shebang-regex/index.js": {
+      "dependencies": []
+    },
+    "node_modules/semver/semver.js": {
+      "dependencies": []
+    },
+    "node_modules/os-locale/node_modules/cross-spawn/lib/enoent.js": {
+      "dependencies": []
+    },
+    "node_modules/strip-eof/index.js": {
+      "dependencies": []
+    },
+    "node_modules/npm-run-path/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "path-key",
+          "realpath": "node_modules/path-key/index.js"
+        }
+      ]
+    },
+    "node_modules/is-stream/index.js": {
+      "dependencies": []
+    },
+    "node_modules/get-stream/index.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/get-stream/buffer-stream",
+          "realpath": "node_modules/get-stream/buffer-stream.js"
+        }
+      ]
+    },
+    "node_modules/get-stream/buffer-stream.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "stream",
+          "realpath": "stream"
+        }
+      ]
+    },
+    "node_modules/p-finally/index.js": {
+      "dependencies": []
+    },
+    "node_modules/signal-exit/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/signal-exit/signals.js",
+          "realpath": "node_modules/signal-exit/signals.js"
+        },
+        {
+          "type": "internal",
+          "path": "events",
+          "realpath": "events"
+        }
+      ]
+    },
+    "node_modules/signal-exit/signals.js": {
+      "dependencies": []
+    },
+    "node_modules/os-locale/node_modules/execa/lib/errname.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        }
+      ]
+    },
+    "node_modules/os-locale/node_modules/execa/lib/stdio.js": {
+      "dependencies": []
+    },
+    "node_modules/lcid/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "invert-kv",
+          "realpath": "node_modules/invert-kv/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/lcid/lcid.json",
+          "realpath": "node_modules/lcid/lcid.json"
+        }
+      ]
+    },
+    "node_modules/invert-kv/index.js": {
+      "dependencies": []
+    },
+    "node_modules/lcid/lcid.json": {
+      "dependencies": []
+    },
+    "node_modules/mem/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "mimic-fn",
+          "realpath": "node_modules/mimic-fn/index.js"
+        },
+        {
+          "type": "module",
+          "path": "p-is-promise",
+          "realpath": "node_modules/p-is-promise/index.js"
+        },
+        {
+          "type": "module",
+          "path": "map-age-cleaner",
+          "realpath": "node_modules/map-age-cleaner/dist/index.js"
+        }
+      ]
+    },
+    "node_modules/mimic-fn/index.js": {
+      "dependencies": []
+    },
+    "node_modules/p-is-promise/index.js": {
+      "dependencies": []
+    },
+    "node_modules/map-age-cleaner/dist/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "p-defer",
+          "realpath": "node_modules/p-defer/index.js"
+        }
+      ]
+    },
+    "node_modules/p-defer/index.js": {
+      "dependencies": []
+    },
+    "node_modules/get-caller-file/index.js": {
+      "dependencies": []
+    },
+    "node_modules/require-main-filename/index.js": {
+      "dependencies": []
+    },
+    "lib/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/ast",
+          "realpath": "lib/ast.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/resolver",
+          "realpath": "lib/resolver.js"
+        },
+        {
+          "type": "local",
+          "path": "package.json",
+          "realpath": "package.json"
+        }
+      ]
+    },
+    "lib/utils.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "glob",
+          "realpath": "node_modules/glob/glob.js"
+        }
+      ]
+    },
+    "node_modules/glob/glob.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "fs.realpath",
+          "realpath": "node_modules/fs.realpath/index.js"
+        },
+        {
+          "type": "module",
+          "path": "minimatch",
+          "realpath": "node_modules/minimatch/minimatch.js"
+        },
+        {
+          "type": "module",
+          "path": "inherits",
+          "realpath": "node_modules/inherits/inherits.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "module",
+          "path": "path-is-absolute",
+          "realpath": "node_modules/path-is-absolute/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/sync.js",
+          "realpath": "node_modules/glob/sync.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/common.js",
+          "realpath": "node_modules/glob/common.js"
+        },
+        {
+          "type": "module",
+          "path": "inflight",
+          "realpath": "node_modules/inflight/inflight.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "module",
+          "path": "once",
+          "realpath": "node_modules/once/once.js"
+        },
+        {
+          "type": "internal",
+          "path": "events",
+          "realpath": "events"
+        }
+      ]
+    },
+    "node_modules/fs.realpath/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/fs.realpath/old.js",
+          "realpath": "node_modules/fs.realpath/old.js"
+        }
+      ]
+    },
+    "node_modules/fs.realpath/old.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    },
+    "node_modules/minimatch/minimatch.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "brace-expansion",
+          "realpath": "node_modules/brace-expansion/index.js"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        }
+      ]
+    },
+    "node_modules/brace-expansion/index.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "concat-map",
+          "realpath": "node_modules/concat-map/index.js"
+        },
+        {
+          "type": "module",
+          "path": "balanced-match",
+          "realpath": "node_modules/balanced-match/index.js"
+        }
+      ]
+    },
+    "node_modules/concat-map/index.js": {
+      "dependencies": []
+    },
+    "node_modules/balanced-match/index.js": {
+      "dependencies": []
+    },
+    "node_modules/inherits/inherits.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/inherits/inherits_browser.js",
+          "realpath": "node_modules/inherits/inherits_browser.js"
+        }
+      ]
+    },
+    "node_modules/inherits/inherits_browser.js": {
+      "dependencies": []
+    },
+    "node_modules/path-is-absolute/index.js": {
+      "dependencies": []
+    },
+    "node_modules/glob/sync.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        },
+        {
+          "type": "module",
+          "path": "fs.realpath",
+          "realpath": "node_modules/fs.realpath/index.js"
+        },
+        {
+          "type": "module",
+          "path": "minimatch",
+          "realpath": "node_modules/minimatch/minimatch.js"
+        },
+        {
+          "type": "internal",
+          "path": "util",
+          "realpath": "util"
+        },
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "internal",
+          "path": "assert",
+          "realpath": "assert"
+        },
+        {
+          "type": "module",
+          "path": "path-is-absolute",
+          "realpath": "node_modules/path-is-absolute/index.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/common.js",
+          "realpath": "node_modules/glob/common.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/glob/glob.js",
+          "realpath": "node_modules/glob/glob.js"
+        }
+      ]
+    },
+    "node_modules/glob/common.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "minimatch",
+          "realpath": "node_modules/minimatch/minimatch.js"
+        },
+        {
+          "type": "module",
+          "path": "path-is-absolute",
+          "realpath": "node_modules/path-is-absolute/index.js"
+        }
+      ]
+    },
+    "node_modules/inflight/inflight.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "wrappy",
+          "realpath": "node_modules/wrappy/wrappy.js"
+        },
+        {
+          "type": "module",
+          "path": "once",
+          "realpath": "node_modules/once/once.js"
+        }
+      ]
+    },
+    "node_modules/wrappy/wrappy.js": {
+      "dependencies": []
+    },
+    "node_modules/once/once.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "wrappy",
+          "realpath": "node_modules/wrappy/wrappy.js"
+        }
+      ]
+    },
+    "lib/resolver.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "path",
+          "realpath": "path"
+        },
+        {
+          "type": "module",
+          "path": "builtin-modules",
+          "realpath": "node_modules/builtin-modules/index.js"
+        },
+        {
+          "type": "local",
+          "path": "lib/utils",
+          "realpath": "lib/utils.js"
+        },
+        {
+          "type": "local",
+          "path": "package.json",
+          "realpath": "package.json"
+        },
+        {
+          "type": "module",
+          "path": "debug",
+          "realpath": "node_modules/debug/src/index.js"
+        }
+      ],
+      "dynamic": true
+    },
+    "node_modules/builtin-modules/index.js": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "module",
+          "realpath": "module"
+        }
+      ]
+    }
+  }
+}
