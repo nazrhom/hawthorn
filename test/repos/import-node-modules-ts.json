@@ -1,0 +1,509 @@
+{
+  "paths": [ "*.ts" ],
+  "files": {
+    "index.ts": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "bluebird",
+          "realpath": "node_modules/bluebird/js/release/bluebird.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/bluebird.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/promise",
+          "realpath": "node_modules/bluebird/js/release/promise.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/promise.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/es5",
+          "realpath": "node_modules/bluebird/js/release/es5.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/async",
+          "realpath": "node_modules/bluebird/js/release/async.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/errors",
+          "realpath": "node_modules/bluebird/js/release/errors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/nodeback",
+          "realpath": "node_modules/bluebird/js/release/nodeback.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/method",
+          "realpath": "node_modules/bluebird/js/release/method.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/bind",
+          "realpath": "node_modules/bluebird/js/release/bind.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/cancel",
+          "realpath": "node_modules/bluebird/js/release/cancel.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/direct_resolve",
+          "realpath": "node_modules/bluebird/js/release/direct_resolve.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/synchronous_inspection",
+          "realpath": "node_modules/bluebird/js/release/synchronous_inspection.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/join",
+          "realpath": "node_modules/bluebird/js/release/join.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/map.js",
+          "realpath": "node_modules/bluebird/js/release/map.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/call_get.js",
+          "realpath": "node_modules/bluebird/js/release/call_get.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/using.js",
+          "realpath": "node_modules/bluebird/js/release/using.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/timers.js",
+          "realpath": "node_modules/bluebird/js/release/timers.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/generators.js",
+          "realpath": "node_modules/bluebird/js/release/generators.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/nodeify.js",
+          "realpath": "node_modules/bluebird/js/release/nodeify.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/promisify.js",
+          "realpath": "node_modules/bluebird/js/release/promisify.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/props.js",
+          "realpath": "node_modules/bluebird/js/release/props.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/race.js",
+          "realpath": "node_modules/bluebird/js/release/race.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/reduce.js",
+          "realpath": "node_modules/bluebird/js/release/reduce.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/settle.js",
+          "realpath": "node_modules/bluebird/js/release/settle.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/some.js",
+          "realpath": "node_modules/bluebird/js/release/some.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/filter.js",
+          "realpath": "node_modules/bluebird/js/release/filter.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/each.js",
+          "realpath": "node_modules/bluebird/js/release/each.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/any.js",
+          "realpath": "node_modules/bluebird/js/release/any.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/thenables",
+          "realpath": "node_modules/bluebird/js/release/thenables.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/promise_array",
+          "realpath": "node_modules/bluebird/js/release/promise_array.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/context",
+          "realpath": "node_modules/bluebird/js/release/context.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/debuggability",
+          "realpath": "node_modules/bluebird/js/release/debuggability.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/finally",
+          "realpath": "node_modules/bluebird/js/release/finally.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/catch_filter",
+          "realpath": "node_modules/bluebird/js/release/catch_filter.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/util.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/es5",
+          "realpath": "node_modules/bluebird/js/release/es5.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/es5.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/async.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/schedule",
+          "realpath": "node_modules/bluebird/js/release/schedule.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/queue",
+          "realpath": "node_modules/bluebird/js/release/queue.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/schedule.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/queue.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/errors.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/es5",
+          "realpath": "node_modules/bluebird/js/release/es5.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/nodeback.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/errors",
+          "realpath": "node_modules/bluebird/js/release/errors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/es5",
+          "realpath": "node_modules/bluebird/js/release/es5.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/method.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/bind.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/cancel.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/direct_resolve.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/synchronous_inspection.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/join.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/map.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/call_get.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/using.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/errors",
+          "realpath": "node_modules/bluebird/js/release/errors.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/timers.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/generators.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/errors",
+          "realpath": "node_modules/bluebird/js/release/errors.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/nodeify.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/promisify.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/nodeback",
+          "realpath": "node_modules/bluebird/js/release/nodeback.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/errors",
+          "realpath": "node_modules/bluebird/js/release/errors.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/props.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/es5",
+          "realpath": "node_modules/bluebird/js/release/es5.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/race.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/reduce.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/settle.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/some.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/errors",
+          "realpath": "node_modules/bluebird/js/release/errors.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/filter.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/each.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/any.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/thenables.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/promise_array.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/context.js": {
+      "dependencies": []
+    },
+    "node_modules/bluebird/js/release/debuggability.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/errors",
+          "realpath": "node_modules/bluebird/js/release/errors.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/finally.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/catch_filter",
+          "realpath": "node_modules/bluebird/js/release/catch_filter.js"
+        }
+      ]
+    },
+    "node_modules/bluebird/js/release/catch_filter.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/util",
+          "realpath": "node_modules/bluebird/js/release/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/bluebird/js/release/es5",
+          "realpath": "node_modules/bluebird/js/release/es5.js"
+        }
+      ]
+    }
+  }
+}

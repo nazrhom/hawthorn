@@ -1,0 +1,14 @@
+{
+  "name": "import-node-modules-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Cruz Viotti <jv@jviotti.com>",
+  "dependencies": {
+    "bluebird": "^3.5.1"
+  },
+  "license": "Apache-2.0"
+}
