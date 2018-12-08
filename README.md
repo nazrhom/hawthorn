@@ -37,6 +37,9 @@ $ git clone https://github.com/jviotti/hawthorn.git
 $ hawthorn --directory ./hawthorn 'lib/*.js' > tree.json
 ```
 
+See an example of the generated output here:
+https://github.com/jviotti/hawthorn/blob/master/example.json.
+
 Documentation
 -------------
 
