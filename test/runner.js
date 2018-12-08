@@ -35,6 +35,7 @@ const testCases = [
   'rimraf',
   'request',
   'encoding',
+  'pareto.js',
   'logform',
   'raven-node',
   'nested-node-modules',

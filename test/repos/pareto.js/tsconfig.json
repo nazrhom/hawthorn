@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "inlineSources": true,
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "ES5",
+    "outDir": "./"
+  },
+  "files": [
+    "src/index.ts",
+    "src/extra/chunk.ts",
+    "src/extra/compose.ts",
+    "src/extra/curry.ts",
+    "src/extra/debounce.ts",
+    "src/extra/deepCopy.ts",
+    "src/extra/matches.ts",
+    "src/extra/memoize.ts",
+    "src/extra/flatMap.ts",
+    "src/extra/flatten.ts",
+    "src/extra/get.ts",
+    "src/extra/pipe.ts",
+    "src/extra/prop.ts",
+    "src/extra/sort.ts",
+    "src/extra/tail.ts"
+  ],
+  "filesGlob": [
+    "typings/index.d.ts",
+    "src/**/*.ts"
+  ]
+}
