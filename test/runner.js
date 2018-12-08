@@ -37,6 +37,7 @@ const testCases = [
   'encoding',
   'pareto.js',
   'logform',
+  'debug',
   'raven-node',
   'nested-node-modules',
   'package-json-main-directory',

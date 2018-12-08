@@ -1,0 +1,252 @@
+{
+  "paths": [ "src/**/*.ts" ],
+  "files": {
+    "src/browser.ts": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "src/DebugLogger",
+          "realpath": "src/DebugLogger.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/DebugController",
+          "realpath": "src/DebugController.ts"
+        }
+      ]
+    },
+    "src/DebugLogger.ts": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "src/DebugController",
+          "realpath": "src/DebugController.ts"
+        }
+      ]
+    },
+    "src/DebugController.ts": {
+      "dependencies": []
+    },
+    "src/debug.ts": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "src/DebugLogger",
+          "realpath": "src/DebugLogger.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/DebugController",
+          "realpath": "src/DebugController.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/node-prefixer",
+          "realpath": "src/node-prefixer.ts"
+        }
+      ]
+    },
+    "src/node-prefixer.ts": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "stacktracey",
+          "realpath": "node_modules/stacktracey/stacktracey.js"
+        }
+      ]
+    },
+    "node_modules/stacktracey/stacktracey.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "get-source",
+          "realpath": "node_modules/get-source/get-source.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/stacktracey/impl/partition",
+          "realpath": "node_modules/stacktracey/impl/partition.js"
+        },
+        {
+          "type": "module",
+          "path": "as-table",
+          "realpath": "node_modules/as-table/build/as-table.js"
+        }
+      ]
+    },
+    "node_modules/get-source/get-source.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/get-source/impl/path",
+          "realpath": "node_modules/get-source/impl/path.js"
+        },
+        {
+          "type": "module",
+          "path": "data-uri-to-buffer",
+          "realpath": "node_modules/data-uri-to-buffer/index.js"
+        },
+        {
+          "type": "module",
+          "path": "source-map",
+          "realpath": "node_modules/source-map/source-map.js"
+        }
+      ]
+    },
+    "node_modules/get-source/impl/path.js": {
+      "dependencies": []
+    },
+    "node_modules/data-uri-to-buffer/index.js": {
+      "dependencies": []
+    },
+    "node_modules/source-map/source-map.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/source-map-generator",
+          "realpath": "node_modules/source-map/lib/source-map-generator.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/source-map-consumer",
+          "realpath": "node_modules/source-map/lib/source-map-consumer.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/source-node",
+          "realpath": "node_modules/source-map/lib/source-node.js"
+        }
+      ]
+    },
+    "node_modules/source-map/lib/source-map-generator.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/base64-vlq",
+          "realpath": "node_modules/source-map/lib/base64-vlq.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/util",
+          "realpath": "node_modules/source-map/lib/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/array-set",
+          "realpath": "node_modules/source-map/lib/array-set.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/mapping-list",
+          "realpath": "node_modules/source-map/lib/mapping-list.js"
+        }
+      ]
+    },
+    "node_modules/source-map/lib/base64-vlq.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/base64",
+          "realpath": "node_modules/source-map/lib/base64.js"
+        }
+      ]
+    },
+    "node_modules/source-map/lib/base64.js": {
+      "dependencies": []
+    },
+    "node_modules/source-map/lib/util.js": {
+      "dependencies": []
+    },
+    "node_modules/source-map/lib/array-set.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/util",
+          "realpath": "node_modules/source-map/lib/util.js"
+        }
+      ]
+    },
+    "node_modules/source-map/lib/mapping-list.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/util",
+          "realpath": "node_modules/source-map/lib/util.js"
+        }
+      ]
+    },
+    "node_modules/source-map/lib/source-map-consumer.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/util",
+          "realpath": "node_modules/source-map/lib/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/binary-search",
+          "realpath": "node_modules/source-map/lib/binary-search.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/base64-vlq",
+          "realpath": "node_modules/source-map/lib/base64-vlq.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/array-set",
+          "realpath": "node_modules/source-map/lib/array-set.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/quick-sort",
+          "realpath": "node_modules/source-map/lib/quick-sort.js"
+        }
+      ]
+    },
+    "node_modules/source-map/lib/binary-search.js": {
+      "dependencies": []
+    },
+    "node_modules/source-map/lib/quick-sort.js": {
+      "dependencies": []
+    },
+    "node_modules/source-map/lib/source-node.js": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/util",
+          "realpath": "node_modules/source-map/lib/util.js"
+        },
+        {
+          "type": "local",
+          "path": "node_modules/source-map/lib/source-map-generator",
+          "realpath": "node_modules/source-map/lib/source-map-generator.js"
+        }
+      ]
+    },
+    "node_modules/stacktracey/impl/partition.js": {
+      "dependencies": []
+    },
+    "node_modules/as-table/build/as-table.js": {
+      "dependencies": [
+        {
+          "type": "module",
+          "path": "printable-characters",
+          "realpath": "node_modules/printable-characters/build/printable-characters.js"
+        }
+      ]
+    },
+    "node_modules/printable-characters/build/printable-characters.js": {
+      "dependencies": []
+    },
+    "src/register.ts": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "src/DebugController",
+          "realpath": "src/DebugController.ts"
+        }
+      ]
+    }
+  }
+}
