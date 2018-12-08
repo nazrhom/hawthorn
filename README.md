@@ -1,20 +1,20 @@
 Hawthorn
 ========
 
-Statically parse dependency trees of JavaScript projects.
+Statically parse dependency trees of JavaScript and TypeScript projects.
 
 [![Build Status](https://travis-ci.org/jviotti/hawthorn.svg?branch=master)](https://travis-ci.org/jviotti/hawthorn)
 [![npm version](https://badge.fury.io/js/hawthorn.svg)](http://badge.fury.io/js/hawthorn)
 [![Dependency Status](https://img.shields.io/david/jviotti/hawthorn.svg)](https://david-dm.org/jviotti/hawthorn)
 
-Supports CommonJS. ES6 imports support coming.
+Supports CommonJS and ES6 imports. JSX/TSX support coming soon.
 
 Description
 -----------
 
 `hawthorn` is a static analyzer that can build a dependency tree data structure
-out of a JavaScript project by recursively parsing and scanning for `require()`
-calls (and ES6 imports in the future).
+out of a JavaScript or TypeScript project by recursively parsing and scanning
+for `require()` calls and `import` expressions.
 
 Installation
 ------------
