@@ -1,0 +1,23 @@
+{
+  "paths": [ "*.ts" ],
+  "files": {
+    "index.ts": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "hello",
+          "realpath": "hello/index.ts"
+        }
+      ]
+    },
+    "hello/index.ts": {
+      "dependencies": [
+        {
+          "type": "internal",
+          "path": "fs",
+          "realpath": "fs"
+        }
+      ]
+    }
+  }
+}

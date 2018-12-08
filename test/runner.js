@@ -41,6 +41,7 @@ const testCases = [
   'raven-node',
   'nested-node-modules',
   'import-node-modules-ts',
+  'import-directory-ts',
   'package-json-main-directory',
   'package-json-main-extension'
 ]
