@@ -1,0 +1,121 @@
+{
+  "paths": [ "src/**/*.ts" ],
+  "files": {
+    "src/extra/chunk.ts": {
+      "dependencies": []
+    },
+    "src/extra/compose.ts": {
+      "dependencies": []
+    },
+    "src/extra/curry.ts": {
+      "dependencies": []
+    },
+    "src/extra/debounce.ts": {
+      "dependencies": []
+    },
+    "src/extra/deepCopy.ts": {
+      "dependencies": []
+    },
+    "src/extra/flatMap.ts": {
+      "dependencies": []
+    },
+    "src/extra/flatten.ts": {
+      "dependencies": []
+    },
+    "src/extra/get.ts": {
+      "dependencies": []
+    },
+    "src/extra/matches.ts": {
+      "dependencies": []
+    },
+    "src/extra/memoize.ts": {
+      "dependencies": []
+    },
+    "src/extra/pipe.ts": {
+      "dependencies": []
+    },
+    "src/extra/prop.ts": {
+      "dependencies": []
+    },
+    "src/extra/sort.ts": {
+      "dependencies": []
+    },
+    "src/extra/tail.ts": {
+      "dependencies": []
+    },
+    "src/index.ts": {
+      "dependencies": [
+        {
+          "type": "local",
+          "path": "src/extra/chunk",
+          "realpath": "src/extra/chunk.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/compose",
+          "realpath": "src/extra/compose.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/curry",
+          "realpath": "src/extra/curry.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/debounce",
+          "realpath": "src/extra/debounce.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/deepCopy",
+          "realpath": "src/extra/deepCopy.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/flatMap",
+          "realpath": "src/extra/flatMap.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/flatten",
+          "realpath": "src/extra/flatten.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/get",
+          "realpath": "src/extra/get.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/matches",
+          "realpath": "src/extra/matches.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/memoize",
+          "realpath": "src/extra/memoize.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/pipe",
+          "realpath": "src/extra/pipe.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/prop",
+          "realpath": "src/extra/prop.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/sort",
+          "realpath": "src/extra/sort.ts"
+        },
+        {
+          "type": "local",
+          "path": "src/extra/tail",
+          "realpath": "src/extra/tail.ts"
+        }
+      ]
+    }
+  }
+}
