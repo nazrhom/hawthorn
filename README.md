@@ -16,6 +16,8 @@ Description
 out of a JavaScript or TypeScript project by recursively parsing and scanning
 for `require()` calls and `import` expressions.
 
+<img src="https://raw.githubusercontent.com/jviotti/hawthorn/master/screenshot.png">
+
 Installation
 ------------
 
