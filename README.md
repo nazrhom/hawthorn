@@ -7,7 +7,7 @@ Statically parse dependency trees of JavaScript and TypeScript projects.
 [![npm version](https://badge.fury.io/js/hawthorn.svg)](http://badge.fury.io/js/hawthorn)
 [![Dependency Status](https://img.shields.io/david/jviotti/hawthorn.svg)](https://david-dm.org/jviotti/hawthorn)
 
-Supports CommonJS and ES6 imports. JSX/TSX support coming soon.
+Supports CommonJS and ES6 imports, and TSX.
 
 Description
 -----------
