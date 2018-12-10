@@ -1,6 +1,6 @@
 {
   "name": "hawthorn",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Statically parse dependency trees of JavaScript and TypeScript projects",
   "main": "lib/index.js",
   "bin": {
