@@ -47,18 +47,48 @@ const testCases = [
 ]
 
 for (const testCase of testCases) {
-  tap.test(testCase, async (test) => {
-    const expected = require(path.resolve(
-      __dirname, 'repos', `${testCase}.json`))
-    expected.version = packageJSON.version
-    expected.cwd = path.resolve(__dirname, 'repos', testCase)
+  const expected = require(path.resolve(
+    __dirname, 'repos', `${testCase}.json`))
+  expected.version = packageJSON.version
+  expected.cwd = path.resolve(__dirname, 'repos', testCase)
 
+  tap.test(testCase, async (test) => {
     const result = await hawthorn(expected.paths, {
       directory: expected.cwd
     })
 
-    Reflect.deleteProperty(expected, 'paths')
-
+    result.paths = expected.paths
     test.same(result, expected)
+  })
+
+  tap.test(`(types=[local]) ${testCase}`, async (test) => {
+    const newExpected = {
+      version: expected.version,
+      cwd: expected.cwd,
+      files: {}
+    }
+
+    for (const fileName of Object.keys(expected.files)) {
+      if (fileName.startsWith('node_modules')) {
+        continue
+      }
+
+      newExpected.files[fileName] = {}
+      if (expected.files[fileName].dynamic) {
+        newExpected.files[fileName].dynamic = true
+      }
+
+      newExpected.files[fileName].dependencies =
+        expected.files[fileName].dependencies.filter((definition) => {
+          return definition.type === 'local'
+        })
+    }
+
+    const result = await hawthorn(expected.paths, {
+      directory: expected.cwd,
+      types: [ 'local' ]
+    })
+
+    test.same(result, newExpected)
   })
 }
