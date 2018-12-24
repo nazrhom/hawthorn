@@ -56,6 +56,8 @@ The available options are:
 
 - `directory`: The base directory to use when scanning. Should be usually set
   to the root directory of the project you want to scan
+- `types`: The types of dependencies to consider. Defaults to `[ 'module',
+  'local', 'internal' ]`
 
 Example:
 
