@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.2 - 2019-01-31
+
+- Add missing dependency
+
 ## 1.2.1 - 2019-01-31
 
 - Add more information to parse errors
