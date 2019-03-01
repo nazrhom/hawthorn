@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jviottti/hawthorn.git"
+    "url": "git@github.com:jviotti/hawthorn.git"
   },
   "scripts": {
     "lint": "eslint lib test",
