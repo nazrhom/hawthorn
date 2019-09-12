@@ -66,3 +66,17 @@ tap.test('should expand two nested globs', async (test) => {
     'glob1/nested2/foo.coffee'
   ])
 })
+
+tap.test('should exclude negative glob results', async (test) => {
+  const files = await utils.resolvePaths([
+    'glob1/**/*.js',
+    '!glob1/**/foo.js'
+  ], {
+    cwd: path.resolve(__dirname, '..', 'data')
+  })
+
+  test.same(Array.from(files), [
+    'glob1/bar.js',
+    'glob1/nested/baz.js'
+  ])
+})
