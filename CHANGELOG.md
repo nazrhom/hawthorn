@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.6 - 2020-03-16
+
+- Upgrade Acorn to 6.4.1
+
 ## 1.2.5 - 2019-11-08
 
 - Upgrade Esprima parser
