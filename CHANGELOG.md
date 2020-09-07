@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.6 - 2020-03-16
+
+- Upgrade Acorn to 6.4.1
+
+## 1.2.5 - 2019-11-08
+
+- Upgrade Esprima parser
+
+## 1.2.4 - 2019-09-12
+
+- Add negation glob pattern support
+
 ## 1.2.3 - 2019-03-01
 
 - Support JSX
