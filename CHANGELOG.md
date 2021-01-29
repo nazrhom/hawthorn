@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.7 - 2021-01-29
+
+- Upgrade `yargs` to 16.2.0
+
 ## 1.2.6 - 2020-03-16
 
 - Upgrade Acorn to 6.4.1
